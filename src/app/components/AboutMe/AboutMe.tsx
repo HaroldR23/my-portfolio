@@ -1,6 +1,6 @@
 "use client";
 
-import { ABOUT_ME_TEXT_ENG, INTRODUCTION_MY_SELF_ENG } from "@/app/constants";
+import { ABOUT_ME_TEXT_ENG, COPYRIGHT_LOGO_URL, INTRODUCTION_MY_SELF_ENG } from "@/app/constants";
 import Image from "next/image";
 
 const AboutMe = () => {
@@ -15,7 +15,7 @@ const AboutMe = () => {
           Downlad CV
         </button>
       </div>
-      <Image alt="Here should be my photo" src="" />
+      <Image alt="Here should be my photo" src={COPYRIGHT_LOGO_URL} width={100} height={100}/>
     </div>
   );
 };
