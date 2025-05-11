@@ -14,6 +14,8 @@ const eslintConfig = [
   {   
     rules: {
       indent: ["error", 2], // Enforce 2-space indentation
+      "max-len": ["error", { code: 100 }], // Enforce a maximum line length of 100 characters
+      
     },
   }
 ];
