@@ -1,11 +1,13 @@
 "use client";
 
-import { ABOUT_ME_TEXT_ENG, COPYRIGHT_LOGO_URL, INTRODUCTION_MY_SELF_ENG } from "@/app/constants";
+import {
+  ABOUT_ME_TEXT_ENG, COPYRIGHT_LOGO_URL, INTRODUCTION_MY_SELF_ENG 
+} from "@/app/constants/data";
 import Image from "next/image";
 
 const AboutMe = () => {
   return (
-    <div>
+    <div id="aboutMe">
       <div>
         <h1>{INTRODUCTION_MY_SELF_ENG}</h1>
         <p>

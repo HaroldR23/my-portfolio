@@ -1,5 +1,6 @@
-import { Notes } from "./models/notes";
-import { Project } from "./models/projects";
+/* eslint-disable max-len */
+import { Project } from "@/app/models/projects";
+import { Notes } from "../models/notes";
 
 export const DEVELOPER_NAME: string = "Harold Rodriguez";
 export const COPYRIGHT_TEXT_CONTENT = "Diseñado y creado por Harold Rodriguez Copyright © 2025 || Todos los Derechos Reservados";
