@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import { Project } from "@/app/models/projects";
-import { Notes } from "../models/notes";
+import { Note } from "@/app/models/notes";
 
 export const DEVELOPER_NAME: string = "Harold Rodriguez";
 export const COPYRIGHT_TEXT_CONTENT = "Diseñado y creado por Harold Rodriguez Copyright © 2025 || Todos los Derechos Reservados";
@@ -58,7 +58,7 @@ export const PROJECTS_LIST: Project[] = [
         
 ]
 
-export const NOTES: Notes[] = [
+export const NOTES: Note[] = [
   {
     description: "This is a sample note description.",
     id: 1,
