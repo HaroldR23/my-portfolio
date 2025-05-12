@@ -1,3 +1,4 @@
+import { Notes } from "./models/notes";
 import { Project } from "./models/projects";
 
 export const DEVELOPER_NAME: string = "Harold Rodriguez";
@@ -55,3 +56,17 @@ export const PROJECTS_LIST: Project[] = [
   },
         
 ]
+
+export const NOTES: Notes[] = [
+  {
+    description: "This is a sample note description.",
+    id: 1,
+    title: "Sample Note",
+    url: "https://example.com",
+  }, {
+    description: "This is a sample note description.",
+    id: 2,
+    title: "Sample Note",
+    url: "https://example.com",
+  }
+];
