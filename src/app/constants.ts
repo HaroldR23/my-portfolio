@@ -70,3 +70,13 @@ export const NOTES: Notes[] = [
     url: "https://example.com",
   }
 ];
+
+export const TECHNOLOGIES_LIST: string[] = [
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "Next.js",
+  "Node.js",
+  "PostgreSQL",
+  "Python",
+];
