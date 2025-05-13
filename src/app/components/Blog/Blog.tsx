@@ -1,4 +1,4 @@
-import { NOTES } from "@/app/constants";
+import { NOTES } from "@/app/constants/data";
 import Link from "next/link";
 
 const Blog = () => {

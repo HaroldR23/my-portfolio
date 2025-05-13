@@ -1,31 +1,49 @@
 "use client";
 
 import { PROJECTS_LIST } from "@/app/constants/data";
+import { 
+  PROJECT_CARD,
+  PROJECT_DESCRIPTION,
+  PROJECT_NAME,
+  PROJECTS_LIST_CONTAINER, 
+  PROJECTS_SECTION_CONTAINER, 
+  PROJECTS_SECTION_HEADER, 
+  PROJECTS_SECTION_TITLE, 
+  PROJECTS_TECHNOLOGIES_CONTAINER, 
+  TECHNOLOGY_ITEM, 
+  TECHNOLOGY_NAME, 
+  VIEW_ALL_BUTTON 
+} from "@/app/constants/styles";
 import { Technologie } from "@/app/models/projects";
-import Image from "next/image";
-import { redirect } from "next/navigation";
+import Link from "next/link";
+import { VscChevronRight } from "react-icons/vsc";
+import TechnologieIcon from "../TechnologieIcon/TechnologieIcon";
+
 
 const ProjectsSection = () => {
   return (
-    <div>
-      <div>
-        <h2>Projects</h2>
-        <button onClick={() => redirect("/projects")}>View all</button>
+    <div className={PROJECTS_SECTION_CONTAINER}>
+      <div className={PROJECTS_SECTION_HEADER}>
+        <h2 className={PROJECTS_SECTION_TITLE}>Projects</h2>
+        <Link className={VIEW_ALL_BUTTON} href="/projects">
+          View all
+          <VscChevronRight />
+        </Link>
       </div>
-      <div>
+      <div className={PROJECTS_LIST_CONTAINER}>
         {PROJECTS_LIST.slice(0, 3).map((project) => (
-          <div key={project.id}>
-            <div>
+          <div key={project.id} className={PROJECT_CARD}>
+            <div className={PROJECT_NAME}>
               {project.name}	
             </div>
-            <p>
+            <p className={PROJECT_DESCRIPTION}>
               {project.description}
             </p>
-            <div>
+            <div className={PROJECTS_TECHNOLOGIES_CONTAINER}>
               {project.technologies.map((tech: Technologie) => (
-                <div key={tech.name}>
-                  <Image src={tech.icon} alt={tech.name} width={100} height={100}/>
-                  <span>{tech.name}</span>
+                <div key={tech.name} className={TECHNOLOGY_ITEM}>
+                  <TechnologieIcon techName={tech.name} />
+                  <span className={TECHNOLOGY_NAME}>{tech.name}</span>
                 </div>
               ))}
             </div>
