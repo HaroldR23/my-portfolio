@@ -1,4 +1,4 @@
-interface Technologies {
+export interface Technologie {
     name: string;
     icon: string;
 }
@@ -9,6 +9,6 @@ export interface Project {
     description: string;
     icon: string;
     url: string;
-    technologies: Technologies[];
+    technologies: Technologie[];
     github: string;
 }
