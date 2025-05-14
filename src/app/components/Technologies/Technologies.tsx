@@ -1,4 +1,4 @@
-import { TECHNOLOGY_NAME } from "@/app/constants/styles"
+import { TECHNOLOGY_NAME } from "@/app/constants/styles/projectsSectionStyles"
 import TechnologieIcon from "../TechnologieIcon/TechnologieIcon"
 import { TECHNOLOGIES_LIST } from "@/app/constants/data";
 

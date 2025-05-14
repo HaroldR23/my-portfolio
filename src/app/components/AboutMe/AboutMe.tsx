@@ -9,7 +9,7 @@ import {
   INTRODUCTION_MY_SELF_STYLE, 
   PARAGRAPH_STYLE, 
   TEXT_CONTAINER 
-} from "@/app/constants/styles";
+} from "@/app/constants/styles/aboutMeStyles";
 import Image from "next/image";
 
 const AboutMe = () => {

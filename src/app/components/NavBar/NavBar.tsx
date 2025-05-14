@@ -4,7 +4,7 @@ import {
   NAV_CONTAINER, 
   NAV_LIST_CONTAINER, 
   NAV_LIST_ITEM
-} from "@/app/constants/styles";
+} from "@/app/constants/styles/navBarStyles";
 import Link from "next/link";
 
 const NavBar = () => {
