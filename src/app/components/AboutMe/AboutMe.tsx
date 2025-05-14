@@ -21,7 +21,7 @@ const AboutMe = () => {
           {ABOUT_ME_TEXT_ENG}
         </p>
         <button className={BUTTON_STYLE} onClick={() => console.log("Download CV")}>
-          Downlad CV
+          Download CV
         </button>
       </div>
       <Image alt="Here should be my photo" src={COPYRIGHT_LOGO_URL} width={100} height={100}/>
