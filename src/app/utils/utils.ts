@@ -15,7 +15,7 @@ export const getProjectCardStyle = (index: number) => cn(
 
 export const getDownloadButtonStyle = () => cn(
   "bg-black text-white cursor-pointer px-6 py-3",
-  "hover:text-purple-500 font-medium transition-colors duration-200",
+  "hover:text-blue-500 font-medium transition-colors duration-200",
   "bg-gradient-to-br rounded-3xl border transition-all",
-  "from-purple-900/10 to-indigo-900/50 hover:border-purple-500",
+  "from-blue-900/10 to-blue-900/50 hover:border-blue-500",
 );

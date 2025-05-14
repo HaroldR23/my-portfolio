@@ -1,7 +1,7 @@
 "use client";
 
 import {
-  ABOUT_ME_TEXT_ENG, COPYRIGHT_LOGO_URL, INTRODUCTION_MY_SELF_ENG 
+  ABOUT_ME_TEXT_ENG, INTRODUCTION_MY_SELF_ENG 
 } from "@/app/constants/data";
 import { 
   ABOUT_ME_CONTAINER, 
@@ -24,7 +24,7 @@ const AboutMe = () => {
           Download CV
         </button>
       </div>
-      <Image alt="Here should be my photo" src={COPYRIGHT_LOGO_URL} width={100} height={100}/>
+      <Image alt="public/hr_picture.png" src="/hr_picture.png" width={400} height={400}/>
     </div>
   );
 };
