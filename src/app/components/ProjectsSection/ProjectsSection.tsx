@@ -2,7 +2,6 @@
 
 import { PROJECTS_LIST } from "@/app/constants/data";
 import { 
-  PROJECT_CARD,
   PROJECT_DESCRIPTION,
   PROJECT_NAME,
   PROJECTS_LIST_CONTAINER, 
@@ -13,11 +12,13 @@ import {
   TECHNOLOGY_ITEM, 
   TECHNOLOGY_NAME, 
   VIEW_ALL_BUTTON 
-} from "@/app/constants/styles";
+} from "@/app/constants/styles/projectsSectionStyles";
 import { Technologie } from "@/app/models/projects";
 import Link from "next/link";
 import { VscChevronRight } from "react-icons/vsc";
-import TechnologieIcon from "../TechnologieIcon/TechnologieIcon";
+import TechnologieIcon from "@/app/components/TechnologieIcon/TechnologieIcon";
+import { getProjectCardStyle } from "@/app/utils/utils";
+
 
 
 const ProjectsSection = () => {
@@ -27,12 +28,12 @@ const ProjectsSection = () => {
         <h2 className={PROJECTS_SECTION_TITLE}>Projects</h2>
         <Link className={VIEW_ALL_BUTTON} href="/projects">
           View all
-          <VscChevronRight />
+          <VscChevronRight className="mt-0.5"/>
         </Link>
       </div>
       <div className={PROJECTS_LIST_CONTAINER}>
-        {PROJECTS_LIST.slice(0, 3).map((project) => (
-          <div key={project.id} className={PROJECT_CARD}>
+        {PROJECTS_LIST.slice(0, 3).map((project, index) => (
+          <div key={project.id} className={getProjectCardStyle(index)}>
             <div className={PROJECT_NAME}>
               {project.name}	
             </div>

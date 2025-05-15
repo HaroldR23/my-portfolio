@@ -1,14 +1,24 @@
-import { TECHNOLOGY_NAME } from "@/app/constants/styles"
+import { 
+  TECHNOLOGIES_CONTAINER, 
+  TECHNOLOGY_ICON, 
+  TECHNOLOGY_ITEM 
+} from "@/app/constants/styles/technologiesStyles";
+import { TECHNOLOGY_NAME } from "@/app/constants/styles/projectsSectionStyles"
 import TechnologieIcon from "../TechnologieIcon/TechnologieIcon"
 import { TECHNOLOGIES_LIST } from "@/app/constants/data";
 
 const Technologies = () => {
   return (
-    <div>
+    <div className={TECHNOLOGIES_CONTAINER}>
       {
         TECHNOLOGIES_LIST.map((tech: string) => (
-          <div key={tech}>
-            <TechnologieIcon techName={tech} />
+          <div 
+            key={tech} 
+            className={TECHNOLOGY_ITEM}
+          >
+            <div className={TECHNOLOGY_ICON}>
+              <TechnologieIcon techName={tech} />
+            </div>
             <span className={TECHNOLOGY_NAME}>{tech}</span>
           </div>
         ))
