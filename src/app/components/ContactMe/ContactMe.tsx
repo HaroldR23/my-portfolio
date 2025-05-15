@@ -1,34 +1,39 @@
+import { 
+  CONTACT_ME_BOX,
+  CONTACT_ME_CONTAINER, 
+  CONTACT_ME_EMAIL, 
+  CONTACT_ME_ICON, 
+  CONTACT_ME_SOCIAL_MEDIA_ITEM, 
+  CONTACT_ME_SUB_CONTAINER, 
+  CONTACT_ME_TEXT, 
+  CONTACT_ME_TITLE
+} from "@/app/constants/styles/contactMeStyles";
 import { SiGithub, SiLinkedin, SiMailboxdotorg } from "react-icons/si";
 
 const ContactMe = () => {
   return (
-    <div className="py-12 px-4 bg-black text-white">
-      <div className="max-w-7xl mx-auto">
-        <h1 className="text-4xl font-bold mb-10">Contact Me</h1>
+    <div className={CONTACT_ME_CONTAINER}>
+      <div className={CONTACT_ME_SUB_CONTAINER}>
+        <h1 className={CONTACT_ME_TITLE}>Contact Me</h1>
         
-        <div className="bg-gradient-to-br from-gray-900 to-gray-800 
-          p-8 rounded-3xl border border-gray-700 
-          transition-all duration-500 ease-out
-          hover:shadow-xl hover:shadow-gray-700/20 
-          space-y-6"
-        >
+        <div className={CONTACT_ME_BOX}>
           <div className="space-y-2">
-            <p className="text-xl text-gray-300">
+            <p className={CONTACT_ME_TEXT}>
               If you want to contact me, please send me an email at:
             </p>
             <a 
               href="mailto:ahsro99@gmail.com"
-              className="flex items-center gap-3 text-blue-400 hover:text-blue-300 
-                transition-all duration-300 group w-fit text-xl"
+              className={CONTACT_ME_EMAIL}
             >
-              <SiMailboxdotorg className="w-6 h-6 transition-transform duration-300 
-                group-hover:scale-110" />
-              <span className="hover:underline">ahsro99@gmail.com</span>
+              <SiMailboxdotorg className={CONTACT_ME_ICON} />
+              <span className={CONTACT_ME_ICON
+
+              }>ahsro99@gmail.com</span>
             </a>
           </div>
 
           <div className="space-y-4">
-            <p className="text-xl text-gray-300">
+            <p className={CONTACT_ME_TEXT}>
               Or you can reach me on my social media:
             </p>
             <ul className="space-y-4">
@@ -37,12 +42,12 @@ const ContactMe = () => {
                   href="https://www.linkedin.com/in/haroldrodriguez/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-blue-400 hover:text-blue-300 
-                    transition-all duration-300 group w-fit text-lg"
+                  className={CONTACT_ME_SOCIAL_MEDIA_ITEM}
                 >
-                  <SiLinkedin className="w-6 h-6 transition-transform duration-300 
-                    group-hover:scale-110" />
-                  <span className="hover:underline">LinkedIn</span>
+                  <SiLinkedin className={CONTACT_ME_ICON} />
+                  <span className={CONTACT_ME_ICON}>
+                    LinkedIn
+                  </span>
                 </a>
               </li>
               <li>
@@ -50,12 +55,10 @@ const ContactMe = () => {
                   href="https://github/HaroldR23.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-blue-400 hover:text-blue-300 
-                    transition-all duration-300 group w-fit text-lg"
+                  className={CONTACT_ME_SOCIAL_MEDIA_ITEM}
                 >
-                  <SiGithub className="w-6 h-6 transition-transform duration-300 
-                    group-hover:scale-110" />
-                  <span className="hover:underline">GitHub</span>
+                  <SiGithub className={CONTACT_ME_ICON} />
+                  <span className={CONTACT_ME_ICON}>GitHub</span>
                 </a>
               </li>
             </ul>
