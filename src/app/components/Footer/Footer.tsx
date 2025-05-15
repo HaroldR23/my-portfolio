@@ -2,7 +2,7 @@ import Copyright from "../Copyright/Copyright";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-4">
+    <footer>
       <Copyright />
     </footer>
   );
