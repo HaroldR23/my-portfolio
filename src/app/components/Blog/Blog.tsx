@@ -13,7 +13,7 @@ import Link from "next/link";
 
 const Blog = () => {
   return (
-    <div className={BLOG_CONTAINER}>
+    <div id="blog" className={BLOG_CONTAINER}>
       <div className={BLOG_SUB_CONTAINER}>
         <h1 className={BLOG_TITLE}>Blog</h1>
         <div className={BLOG_GRID}>
