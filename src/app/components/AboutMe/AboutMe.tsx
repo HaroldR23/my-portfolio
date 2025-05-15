@@ -1,7 +1,11 @@
 "use client";
 
 import {
-  ABOUT_ME_TEXT_ENG, INTRODUCTION_MY_SELF_ENG 
+  ABOUT_ME_TEXT_ENG, 
+  CV_BUTTON_TEXT_ENG, 
+  CV_DOWNLOAD_NAME_ENG, 
+  CV_DOWNLOAD_URL_ENG, 
+  INTRODUCTION_MY_SELF_ENG 
 } from "@/app/constants/data";
 import { 
   ABOUT_ME_CONTAINER, 
@@ -20,9 +24,13 @@ const AboutMe = () => {
         <p className={PARAGRAPH_STYLE}>
           {ABOUT_ME_TEXT_ENG}
         </p>
-        <button className={BUTTON_STYLE} onClick={() => console.log("Download CV")}>
-          Download CV
-        </button>
+        <a 
+          href={CV_DOWNLOAD_URL_ENG} 
+          download={CV_DOWNLOAD_NAME_ENG}
+          className={BUTTON_STYLE}
+        >
+          {CV_BUTTON_TEXT_ENG}
+        </a>
       </div>
       <Image alt="public/hr_picture.png" src="/hr_picture.png" width={400} height={400}/>
     </div>
