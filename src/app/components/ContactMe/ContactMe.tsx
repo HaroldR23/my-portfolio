@@ -12,7 +12,7 @@ import { SiGithub, SiLinkedin, SiMailboxdotorg } from "react-icons/si";
 
 const ContactMe = () => {
   return (
-    <div className={CONTACT_ME_CONTAINER}>
+    <div id="contactMe" className={CONTACT_ME_CONTAINER}>
       <div className={CONTACT_ME_SUB_CONTAINER}>
         <h1 className={CONTACT_ME_TITLE}>Contact Me</h1>
         
