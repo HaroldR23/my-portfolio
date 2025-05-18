@@ -2,11 +2,13 @@
 import { Project } from "@/app/models/projects";
 import { Note } from "@/app/models/notes";
 
+
 export const DEVELOPER_NAME: string = "Harold Rodriguez";
 export const COPYRIGHT_TEXT_CONTENT = "Diseñado y creado por Harold Rodriguez Copyright © 2025 || Todos los Derechos Reservados";
 export const COPYRIGHT_LOGO_URL = "https://i.imgur.com/qZAXWKR.png";
-export const ABOUT_ME_TEXT_ENG = "I am a software engineer with a passion for building web applications. I have experience in various technologies and frameworks, and I love learning new things."
-export const INTRODUCTION_MY_SELF_ENG = "Hello, I'm Harold Rodriguez.";
+export const ABOUT_ME_TEXT_ENG = "I build robust applications, develop scalable APIs, and love working on both frontend and backend systems. I adapt quickly, thrive in team environments, and never shy away from a challenge. Whether it's learning a new framework or improving a product, I'm committed to continuous growth and delivering quality through clean, efficient code."
+export const INTRODUCTION_MY_SELF_ENG = "Hi, I'm Harold Rodriguez ";
+export const INTRODUCTION_MY_SELF_ENG_SUB_HEADER = "a passionate Software Developer who enjoys turning complex problems into elegant solutions."
 export const PROJECTS_SECTION_TITLE_ENG = "Projects";
 export const CV_BUTTON_TEXT_ENG = "Download CV";
 export const CV_DOWNLOAD_URL_ENG = "/Harold_Rodriguez_CV_eng.pdf";
