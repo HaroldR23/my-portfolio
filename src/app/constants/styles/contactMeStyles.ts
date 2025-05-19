@@ -1,6 +1,6 @@
-export const CONTACT_ME_CONTAINER = "py-12 px-4 text-white";
+export const CONTACT_ME_CONTAINER = "py-12 px-4 text-white mx-auto mt-10 sm:px-6 lg:px-50";
 export const CONTACT_ME_SUB_CONTAINER = "max-w-7xl mx-auto";
-export const CONTACT_ME_TITLE = "text-4xl font-bold mb-10";
+export const CONTACT_ME_TITLE =  "text-xl md:text-3xl lg:text-4xl font-bold pb-5 tracking-tight";
 export const CONTACT_ME_BOX = `
     bg-gradient-to-br from-gray-900 to-gray-800
     p-6 rounded-3xl border border-gray-700

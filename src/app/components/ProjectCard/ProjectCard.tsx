@@ -1,4 +1,5 @@
 import { 
+  LINK_STYLE,
   PROJECT_DESCRIPTION, 
   PROJECT_NAME, 
   PROJECTS_TECHNOLOGIES_CONTAINER, 
@@ -25,15 +26,15 @@ const ProjectCard = ({
       <p className={PROJECT_DESCRIPTION}>
         {description}
       </p>
-      <div className="flex justify-center">
+      <div className="flex justify-start items-center mt-3">
         {url && (
           <a
             href={url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 hover:text-blue-700"
+            className={LINK_STYLE}
           >
-              View Project
+              • View Project
           </a>
         )}
         {github.map((repo, index) => (
@@ -42,9 +43,9 @@ const ProjectCard = ({
             href={repo.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 hover:text-blue-700 ml-2"
-          >
-            {repo.repository.includes("Monorepo") ? "Repository" : repo.repository}
+            className={LINK_STYLE}
+          > 
+            • {repo.repository.includes("Monorepo") ? "Repository" : repo.repository}
           </a>
         ))}
       </div>

@@ -59,7 +59,7 @@ const TechnologieIcon = ({ techName }: TechnologieIconProps) => {
 
   const techNameLower = techName.toLocaleLowerCase().replace(/[ ,.]/g, "");;
   return (
-    <div className="flex items-center justify-center w-10 h-10 rounded-full">
+    <div className="flex items-center justify-center rounded-full">
       {icons[techNameLower] || <SiJavascript />}
     </div>
   )

@@ -10,12 +10,14 @@ export const getProjectCardStyle = (index: number) => cn(
   "bg-gradient-to-br p-6 rounded-3xl border transition-all",
   "hover:scale-[1.01] hover:shadow-lg",
   PROJECT_CARD_COLORS[index % PROJECT_CARD_COLORS.length],
-  "flex flex-col h-72"
+  "flex flex-col h-auto sm:h-80 md:h-96 lg:h-auto",
 );
 
 export const getDownloadButtonStyle = () => cn(
-  "bg-black text-white cursor-pointer px-6 py-4",
-  "hover:text-blue-500 font-medium transition-colors duration-200",
-  "bg-gradient-to-br rounded-3xl border transition-all",
-  "from-blue-900/10 to-blue-900/50 hover:border-blue-500",
+  "text-white cursor-pointer font-medium transition-colors duration-200",
+  "text-sm sm:text-base md:text-lg lg:text-xl",
+  "px-3 py-2 sm:px-1 sm:py-3 md:px-5 md:py-4 lg:px-6 lg:py-5",
+  "hover:text-blue-500",
+  "bg-gradient-to-br from-blue-900/10 to-blue-900/50",
+  "hover:border-blue-500 border rounded-3xl transition-all"
 );
