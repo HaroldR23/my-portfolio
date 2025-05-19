@@ -11,7 +11,7 @@ const ProjectsPage = () => {
             id={project.id} name={project.name} 
             technologies={project.technologies} 
             url={project.url} key={project.id} 
-            github={project.github} icon={project.icon} 
+            github={project.github} 
           />
         ))
       }

@@ -31,6 +31,7 @@ const Blog = () => {
               <Link
                 href={note.url}
                 className={BLOG_ITEM_LINK}
+                target="_blank"
               >
                 See more
               </Link>

@@ -1,14 +1,13 @@
-export interface Technologie {
-    name: string;
-    icon: string;
+export interface Repository {
+    repository: string;
+    url: string;
 }
 
 export interface Project {
     id: number;
     name: string;
     description: string;
-    icon: string;
-    url: string;
-    technologies: Technologie[];
-    github: string;
+    url?: string;
+    technologies: string[];
+    github: Repository[];
 }

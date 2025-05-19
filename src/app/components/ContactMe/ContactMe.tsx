@@ -14,12 +14,12 @@ const ContactMe = () => {
   return (
     <div id="contactMe" className={CONTACT_ME_CONTAINER}>
       <div className={CONTACT_ME_SUB_CONTAINER}>
-        <h1 className={CONTACT_ME_TITLE}>Contact Me</h1>
+        <h1 className={CONTACT_ME_TITLE}>Get in Touch</h1>
         
         <div className={CONTACT_ME_BOX}>
           <div className="space-y-2">
             <p className={CONTACT_ME_TEXT}>
-              If you want to contact me, please send me an email at:
+              Feel free to reach out via email:
             </p>
             <a 
               href="mailto:ahsro99@gmail.com"
@@ -34,12 +34,12 @@ const ContactMe = () => {
 
           <div className="space-y-4">
             <p className={CONTACT_ME_TEXT}>
-              Or you can reach me on my social media:
+              Or connect with me on:
             </p>
             <ul className="space-y-4">
               <li>
                 <a 
-                  href="https://www.linkedin.com/in/haroldrodriguez/" 
+                  href="https://www.linkedin.com/in/harold-rodriguez-full-stack-developer/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className={CONTACT_ME_SOCIAL_MEDIA_ITEM}
@@ -52,7 +52,7 @@ const ContactMe = () => {
               </li>
               <li>
                 <a 
-                  href="https://github/HaroldR23.com" 
+                  href="https://github.com/HaroldR23" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className={CONTACT_ME_SOCIAL_MEDIA_ITEM}

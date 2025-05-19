@@ -9,13 +9,13 @@ export const PROJECTS_LIST_CONTAINER = "grid grid-cols-1 md:grid-cols-2 lg:grid-
 export const PROJECT_NAME = "mb-3 text-3xl font-bold mb-4";
 export const PROJECT_IMAGE = "text-xl font-semibold mb-3";
 export const PROJECT_DESCRIPTION = "text-gray-300 text-lg mb-auto";
-export const PROJECTS_TECHNOLOGIES_CONTAINER ="flex flex-wrap gap-3 mt-4";
+export const PROJECTS_TECHNOLOGIES_CONTAINER ="flex gap-3 overflow-x-auto whitespace-nowrap";
 export const TECHNOLOGY_ITEM = `
 	flex items-center bg-gray-900 
 	backdrop-blur-sm px-3 py-2 rounded-full
 `;
 export const TECHNOLOGY_NAME = `
-	text-sm font-medium text-white
+	text-sm text-white
 	group-hover:text-blue-300 transition-colors duration-300
 `;
 export const PROJECT_CARD_COLORS = [
