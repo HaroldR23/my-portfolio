@@ -4,7 +4,7 @@ import { Note } from "@/app/models/notes";
 
 
 export const DEVELOPER_NAME: string = "Harold Rodriguez";
-export const COPYRIGHT_TEXT_CONTENT = "Diseñado y creado por Harold Rodriguez Copyright © 2025 || Todos los Derechos Reservados";
+export const COPYRIGHT_TEXT_CONTENT = "Designed and created by Harold Rodriguez © 2025 || All Rights Reserved";
 export const COPYRIGHT_LOGO_URL = "https://i.imgur.com/qZAXWKR.png";
 export const ABOUT_ME_TEXT_ENG = "I build robust applications, develop scalable APIs, and love working on both frontend and backend systems. I adapt quickly, thrive in team environments, and never shy away from a challenge. Whether it's learning a new framework or improving a product, I'm committed to continuous growth and delivering quality through clean, efficient code."
 export const INTRODUCTION_MY_SELF_ENG = "Hi, I'm Harold Rodriguez ";
@@ -89,21 +89,16 @@ export const PROJECTS_LIST: Project[] = [
       "Dart"
     ],
     github: [{url: "https://github.com/HaroldR23/pokemon-flutter", repository: "Monorepo"}],
-  }
+  },
         
 ]
 
 export const NOTES: Note[] = [
   {
-    description: "This is a sample note description.",
+    description: "I'm trying to give some advice to developers who are looking for a job in 2025. I hope it helps you. (In Spanish)",
     id: 1,
-    title: "Sample Note",
-    url: "https://example.com",
-  }, {
-    description: "This is a sample note description.",
-    id: 2,
-    title: "Sample Note",
-    url: "https://example.com",
+    title: "How to look for a job as a developer in 2025?",
+    url: "https://docs.google.com/document/d/1_aqUHsoq12ySvow0ToMFtEWGiK__KQ6mdlKk6NFoxLs/edit?usp=sharing",
   }
 ];
 
