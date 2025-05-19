@@ -6,7 +6,7 @@ export const TECHNOLOGIES_LIST_HEADER = `
 export const TECHNOLOGIES_LIST_CONTAINER = `
     flex flex-wrap gap-2 md:gap-4 lg:gap-4
     justify-center items-center 
-    w-100 md:w-150 lg:w-230 mx-auto 
+    w-95 md:w-150 lg:w-230 mx-auto 
 `;
 export const TECHNOLOGY_ITEM = `
     flex items-center gap-2 bg-gray-900/40
