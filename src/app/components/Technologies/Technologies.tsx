@@ -1,9 +1,9 @@
 import { 
   TECHNOLOGIES_CONTAINER, 
   TECHNOLOGY_ICON, 
-  TECHNOLOGY_ITEM 
+  TECHNOLOGY_ITEM,
+  TECHNOLOGY_NAME
 } from "@/app/constants/styles/technologiesStyles";
-import { TECHNOLOGY_NAME } from "@/app/constants/styles/projectsSectionStyles"
 import TechnologieIcon from "../TechnologieIcon/TechnologieIcon"
 import { TECHNOLOGIES_LIST } from "@/app/constants/data";
 

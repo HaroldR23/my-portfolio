@@ -8,3 +8,7 @@ export const TECHNOLOGY_ITEM = `
     hover:shadow-gray-700/20 transform-gpu
 `;
 export const TECHNOLOGY_ICON = "text-white group-hover:rotate-12 transition-transform duration-300";
+export const TECHNOLOGY_NAME = `
+	text-lg text-white
+	group-hover:text-blue-300 transition-colors duration-300
+`;
