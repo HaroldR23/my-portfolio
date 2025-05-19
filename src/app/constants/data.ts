@@ -25,19 +25,18 @@ export const PROJECTS_LIST: Project[] = [
       "Tailwind CSS",
       "React.js",
     ],
-    url: "",
+    url: undefined,
   },
   {
     id: 2,
     name: " Dental Lab Web Site",
-    description: "A fully responsive website developed for a dental lab. It provides information about the lab, allows users to schedule appointments and contact details.",
+    description: "A fully responsive website developed for a dental lab. It provides information about the lab, allows users to schedule appointments and contact details. Admin panel for adding new products and managing appointments. (In progress)",
     url: "https://dental-lab-website-brown.vercel.app/",
     technologies: [
       "React.js",
       "TypeScript",
       "Sass",
-      "jest",
-      "React.js",
+      "Jest",
       "Ant Design",
       "Python",
       "FastAPI",
@@ -54,7 +53,7 @@ export const PROJECTS_LIST: Project[] = [
     id: 3,
     name: "E-commerce",
     description: "An academic group project developed with a team of 5, as part of a Full Stack Web Developer certification. Includes product browsing, cart functionality and rating products.",
-    url: "",
+    url: undefined,
     technologies: [
       "React.js",
       "Javascript",
@@ -63,13 +62,13 @@ export const PROJECTS_LIST: Project[] = [
       "Nodejs",
       "Express"
     ],
-    github: [{url: "https://github.com/haroldrodriguez/ecommerce-example", repository: "Frontend"}, {url: "asasasas", repository: "Backend"}],
+    github: [{url: "https://github.com/FelipeS02/E-Commerce-G7", repository: "Monorepo"}],
   },
   {
     id: 4,
     name: " Web Pokémon App",
-    description: "A static web application that fetches and displays Pokémon data from an API. Includes functionality to create new Pokémon (stored in memory only).",
-    url: "https://ecommerce-example.com",
+    description: "A static web application that fetches and displays Pokémon data from an API. Includes functionality to create new Pokémon (stored in memory only). (Academic project)",
+    url: undefined,
     technologies: [
       "React.js",
       "Javascript",
@@ -78,18 +77,18 @@ export const PROJECTS_LIST: Project[] = [
       "Nodejs",
       "Express"
     ],
-    github: [{url: "sasasas", repository: "Frontend"}, {url: "asasasas", repository: "Backend"}],
+    github: [{url: "https://github.com/Harold930/PI-POKEMON", repository: "Monorepo"}],
   },
   {
     id: 5,
     name: "Flutter Pokémon App",
     description: "A simple mobile application built with Flutter that consumes a public API to display Pokémon data. Users can also create new Pokémon entries (stored temporarily in memory).",
-    url: "",
+    url: undefined,
     technologies: [
       "Flutter",
       "Dart"
     ],
-    github: [{url: "sasasas", repository: "Mono"}],
+    github: [{url: "https://github.com/HaroldR23/pokemon-flutter", repository: "Monorepo"}],
   }
         
 ]

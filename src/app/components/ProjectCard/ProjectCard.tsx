@@ -14,6 +14,7 @@ const ProjectCard = ({
   name,
   technologies,
   url = "",
+  github,
 }: Project) => {
   console.log(url);
   return (
@@ -24,6 +25,31 @@ const ProjectCard = ({
       <p className={PROJECT_DESCRIPTION}>
         {description}
       </p>
+      <div className="flex justify-center">
+        {url && (
+          <a
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:text-blue-700"
+          >
+              View Project
+          </a>
+        )}
+        {github.map((repo, index) => (
+          <a
+            key={index}
+            href={repo.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:text-blue-700 ml-2"
+          >
+            {repo.repository.includes("Monorepo") ? "Repository" : repo.repository}
+          </a>
+        ))}
+      </div>
+
+          
       <div className={PROJECTS_TECHNOLOGIES_CONTAINER}>
         {technologies.map((techName, index) => (
           <div key={index} className={TECHNOLOGY_ITEM}>
