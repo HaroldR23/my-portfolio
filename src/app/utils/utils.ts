@@ -10,7 +10,7 @@ export const getProjectCardStyle = (index: number) => cn(
   "bg-gradient-to-br p-6 rounded-3xl border transition-all",
   "hover:scale-[1.01] hover:shadow-lg",
   PROJECT_CARD_COLORS[index % PROJECT_CARD_COLORS.length],
-  "flex flex-col h-72"
+  "flex flex-col h-auto sm:h-80 md:h-96 lg:h-auto",
 );
 
 export const getDownloadButtonStyle = () => cn(
