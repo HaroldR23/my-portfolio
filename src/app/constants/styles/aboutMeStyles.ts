@@ -12,3 +12,7 @@ export const TEXT_CONTAINER = "flex-1 space-y-12";
 export const PARAGRAPH_STYLE = `
 text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed max-w-2xl`;
 export const BUTTON_STYLE = getDownloadButtonStyle();
+export const IMAGE_STYLE = `
+    rounded-full border-2 border-blue-500
+    shadow-lg shadow-blue-500/50
+`;

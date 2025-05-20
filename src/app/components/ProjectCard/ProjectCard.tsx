@@ -17,7 +17,7 @@ const ProjectCard = ({
   url = "",
   github,
 }: Project) => {
-  console.log(url);
+
   return (
     <div key={id} className={getProjectCardStyle(id)}>
       <div className={PROJECT_NAME}>
