@@ -11,6 +11,7 @@ import {
 import { 
   ABOUT_ME_CONTAINER, 
   BUTTON_STYLE, 
+  IMAGE_STYLE, 
   INTRODUCTION_MY_SELF_STYLE, 
   PARAGRAPH_STYLE, 
   TEXT_CONTAINER 
@@ -25,7 +26,7 @@ const AboutMe = () => {
     <div id="aboutMe" className={ABOUT_ME_CONTAINER}>
       {isMobile && <Image
         alt="public/hr_picture.png" 
-        src="/hr_picture.png" className="rounded-full" width={250} height={250}
+        src="/hr_picture.png" className={IMAGE_STYLE} width={250} height={250}
       />}
       <div className={TEXT_CONTAINER}>
         <h1 className={INTRODUCTION_MY_SELF_STYLE}>{INTRODUCTION_MY_SELF_ENG}</h1>
@@ -45,7 +46,8 @@ const AboutMe = () => {
       </div>
       {!isMobile && <Image
         alt="public/hr_picture.png" 
-        src="/hr_picture.png" className="rounded-full" width={400} height={400}
+        src="/hr_picture.png" 
+        className={IMAGE_STYLE} width={400} height={400}
       />}
     </div>
   );
