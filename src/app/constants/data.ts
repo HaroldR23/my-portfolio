@@ -15,6 +15,26 @@ export const CV_DOWNLOAD_URL_ENG = "/Harold_Rodriguez_CV_eng.pdf";
 export const CV_DOWNLOAD_NAME_ENG = "Harold_Rodriguez_CV.pdf";
 export const PROJECTS_LIST: Project[] = [
   {
+    id: 6,
+    name: "Virtual Marketing Assistant",
+    description: "An AI-powered chatbot designed to streamline social media content creation. By interacting with users through a few simple questions, it automatically generates personalized posts ready to publish on platforms like Instagram, X (Twitter), Facebook, and LinkedIn. Its standout feature is a Retrieval-Augmented Generation (RAG) system, which lets users upload documents that the assistant uses as contextual knowledge—ensuring the content it generates aligns perfectly with the user’s brand or campaign goals. I helped build this tool while working at a company, focusing on AI integration, context-aware content generation, and delivering a seamless user experience for marketers.",
+    technologies: [
+      "Python",
+      "AWS",
+      "OpenAI API",
+      "Docker",
+      "React.js",
+      "Tailwind CSS",
+      "Pinecone",
+      "Stability AI",
+      "Javascript",
+      "HTML",
+      "CSS",
+    ],
+    github: [],
+    url: "https://campaignsplanet.com/"
+  },
+  {
     id: 1,
     name: "Portfolio",
     description: "This very portfolio site, showcasing my work and experience. Currently in active development — check the repository for progress and updates.",
@@ -90,7 +110,6 @@ export const PROJECTS_LIST: Project[] = [
     ],
     github: [{url: "https://github.com/HaroldR23/pokemon-flutter", repository: "Monorepo"}],
   },
-        
 ]
 
 export const NOTES: Note[] = [
@@ -116,4 +135,9 @@ export const TECHNOLOGIES_LIST: string[] = [
   "Dynamodb",
   "Flutter",
   "OpenAI API",
+  "Tailwind CSS",
+  "Sass",
+  "Docker",
+  "Stability AI",
+  "Pinecone",
 ];

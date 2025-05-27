@@ -1,10 +1,11 @@
-import { JSX } from "react";
+import { ReactElement } from "react";
 import { 
   SiAmazondynamodb,
   SiAmazonwebservices,
   SiAntdesign,
   SiCss3,
   SiDart,
+  SiDocker,
   SiExpress,
   SiFastapi,
   SiFlutter,
@@ -26,11 +27,12 @@ import {
   SiVite
 } from "react-icons/si";
 import { TechnologieIconProps } from "./TechnologieIconProps";
+import Image from "next/image";
 
 
 
 const TechnologieIcon = ({ techName }: TechnologieIconProps) => {
-  const icons: Record<string, JSX.Element> = {
+  const icons: Record<string, ReactElement> = {
     javascript: <SiJavascript />,
     typescript: <SiTypescript />,
     python: <SiPython />,
@@ -55,11 +57,21 @@ const TechnologieIcon = ({ techName }: TechnologieIconProps) => {
     vite: <SiVite />,
     pytest: <SiPytest />,
     vercel: <SiVercel />,
+    docker: <SiDocker />,
+    pinecone: 
+    <Image 
+      src="/pinecone.png" 
+      className="bg-white rounded-full" 
+      alt="Pinecone Logo" 
+      width={30} 
+      height={30} 
+    />,
+    stabilityai: <Image src="/stabilityai.png" alt="Stability AI Logo" width={30} height={30} />,
   };
 
-  const techNameLower = techName.toLocaleLowerCase().replace(/[ ,.]/g, "");;
+  const techNameLower = techName.toLocaleLowerCase().replace(/[ ,.]/g, "");
   return (
-    <div className="flex items-center justify-center rounded-full">
+    <div>
       {icons[techNameLower] || <SiJavascript />}
     </div>
   )

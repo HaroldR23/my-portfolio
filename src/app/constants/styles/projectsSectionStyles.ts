@@ -10,14 +10,17 @@ export const PROJECTS_LIST_CONTAINER = `
   grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-15
 `;
 export const PROJECT_NAME = "text-base md:text-lg lg:text-xl font-bold text-white mb-2";
-export const PROJECT_DESCRIPTION = "text-base md:text-lg lg:text-xl";
+export const PROJECT_DESCRIPTION = `
+  overflow-y-auto max-h-40
+  text-base md:text-lg lg:text-xl
+`;
 export const PROJECTS_TECHNOLOGIES_CONTAINER =`
-  flex gap-1 md:gap-4 lg:gap-4 mt-3
+  grid grid-flow-col auto-cols-max gap-1 md:gap-4 lg:gap-4 mt-3
   overflow-x-auto whitespace-nowrap
 `;
 export const TECHNOLOGY_ITEM = `
 	flex items-center bg-gray-900 
-	backdrop-blur-sm px-2 px-3 py-2 rounded-full
+	backdrop-blur-sm px-3 py-2 rounded-full
 `;
 export const TECHNOLOGY_NAME = `
 	text-sm text-white
