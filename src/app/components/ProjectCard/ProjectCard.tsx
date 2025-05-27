@@ -52,15 +52,15 @@ const ProjectCard = ({
 
           
       <div className={PROJECTS_TECHNOLOGIES_CONTAINER}>
-        {technologies.map((techName, index) => (
-          <div key={index} className={TECHNOLOGY_ITEM}>
+        {technologies.map((techName: string) => (
+          <div key={techName} className={TECHNOLOGY_ITEM}>
             <TechnologieIcon techName={techName} />
             <span className={TECHNOLOGY_NAME}>{techName}</span>
           </div>
         ))}
       </div>
     </div>
-       
+        
   );
 };
 
