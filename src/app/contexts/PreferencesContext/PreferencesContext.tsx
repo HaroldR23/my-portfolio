@@ -4,6 +4,6 @@ import { createContext } from "react";
 import { PreferencesContextProps } from "./PreferencesContextProps";
 
 export const PreferencesContext = createContext<PreferencesContextProps>({
-  isEnglish: true,
-  setIsEnglish: () => {},
+  language: "",
+  setLanguage: () => {},
 });

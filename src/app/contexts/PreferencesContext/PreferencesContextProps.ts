@@ -1,4 +1,4 @@
 export interface PreferencesContextProps {
-    isEnglish: boolean;
-    setIsEnglish: (isEnglish: boolean) => void;
+    language: string;
+    setLanguage: (language: string) => void;
 }

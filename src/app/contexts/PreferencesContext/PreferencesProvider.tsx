@@ -4,24 +4,24 @@ import { useMemo, useState } from "react";
 import { PreferencesContext } from "./PreferencesContext";
 
 const PreferencesProvider = ({ children }: { children: React.ReactNode }) => {
-  const [isEnglish, setIsEnglish] = useState<boolean>(true);
+  const [language, setLanguage] = useState<string>("english");
 	
   useMemo(() => {
     if (typeof window !== "undefined") {
-      const storedLanguage = localStorage.getItem("isEnglish");
+      const storedLanguage = localStorage.getItem("language");
       if (storedLanguage) {
-        setIsEnglish(storedLanguage === "true");
+        setLanguage(storedLanguage);
       }
     }
   }, []);
 
-  const handleIsEnglishChange = (value: boolean) => {
-    setIsEnglish(value);
-    localStorage.setItem("isEnglish", value.toString());
+  const handleLanguageChange = (value: string) => {
+    setLanguage(value);
+    localStorage.setItem("language", value.toString());
   };
   return (
     <PreferencesContext.Provider 
-      value={{ isEnglish: isEnglish, setIsEnglish: handleIsEnglishChange }}
+      value={{ language: language, setLanguage: handleLanguageChange }}
     >
       {children}
     </PreferencesContext.Provider>
