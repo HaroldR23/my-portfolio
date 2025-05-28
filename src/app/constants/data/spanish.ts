@@ -9,9 +9,8 @@ export const INTRODUCTION_MY_SELF_SPA_SUB_HEADER = "un apasionado Desarrollador 
 export const PROJECTS_SECTION_TITLE_SPA = "Proyectos";
 export const CV_BUTTON_TEXT_SPA = "Descargar CV";
 export const CV_DOWNLOAD_URL_SPA = "/Harold_Rodriguez_CV_esp.pdf";
-export const CV_DOWNLOAD_NAME_SPA = "Harold_Rodriguez_CV.pdf";
 
-export const PROJECTS_LIST: Project[] = [
+export const PROJECTS_LIST_SPA: Project[] = [
   {
     id: 6,
     name: "Virtual Marketing Assistant",
