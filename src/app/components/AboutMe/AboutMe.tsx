@@ -7,7 +7,7 @@ import {
   CV_DOWNLOAD_URL_ENG, 
   INTRODUCTION_MY_SELF_ENG, 
   INTRODUCTION_MY_SELF_ENG_SUB_HEADER
-} from "@/app/constants/data";
+} from "@/app/constants/data/english";
 import { 
   ABOUT_ME_CONTAINER, 
   BUTTON_STYLE, 

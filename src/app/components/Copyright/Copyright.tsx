@@ -1,4 +1,4 @@
-import { COPYRIGHT_LOGO_URL, COPYRIGHT_TEXT_CONTENT } from "@/app/constants/data";
+import { COPYRIGHT_LOGO_URL, COPYRIGHT_TEXT_CONTENT } from "@/app/constants/data/english";
 import Image from "next/image";
 
 const Copyright = () => {

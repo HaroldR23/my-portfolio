@@ -1,6 +1,6 @@
 "use client";
 
-import { PROJECTS_LIST } from "@/app/constants/data";
+import { PROJECTS_LIST } from "@/app/constants/data/english";
 import { 
   PROJECTS_LIST_CONTAINER, 
   PROJECTS_SECTION_CONTAINER, 

@@ -1,4 +1,4 @@
-import { NOTES } from "@/app/constants/data";
+import { NOTES } from "@/app/constants/data/english";
 import { 
   BLOG_CONTAINER, 
   BLOG_GRID,

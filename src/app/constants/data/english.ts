@@ -49,7 +49,7 @@ export const PROJECTS_LIST: Project[] = [
   },
   {
     id: 2,
-    name: " Dental Lab Web Site",
+    name: "Dental Lab Web Site",
     description: "A fully responsive website developed for a dental lab. It provides information about the lab, allows users to schedule appointments and contact details. Admin panel for adding new products and managing appointments. (In progress)",
     url: "https://dental-lab-website-brown.vercel.app/",
     technologies: [
@@ -86,7 +86,7 @@ export const PROJECTS_LIST: Project[] = [
   },
   {
     id: 4,
-    name: " Web Pokémon App",
+    name: "Web Pokémon App",
     description: "A static web application that fetches and displays Pokémon data from an API. Includes functionality to create new Pokémon (stored in memory only). (Academic project)",
     url: undefined,
     technologies: [
