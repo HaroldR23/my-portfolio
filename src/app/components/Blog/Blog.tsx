@@ -1,4 +1,6 @@
-import { NOTES } from "@/app/constants/data";
+"use client";
+
+import { NOTES, READ_MORE } from "@/app/constants/data/data";
 import { 
   BLOG_CONTAINER, 
   BLOG_GRID,
@@ -9,15 +11,18 @@ import {
   BLOG_SUB_CONTAINER, 
   BLOG_TITLE 
 } from "@/app/constants/styles/blogStyles";
+import usePreferencesContext from "@/app/hooks/usePreferencesContext";
 import Link from "next/link";
 
 const Blog = () => {
+  const { language } = usePreferencesContext();
+
   return (
     <div id="blog" className={BLOG_CONTAINER}>
       <div className={BLOG_SUB_CONTAINER}>
         <h1 className={BLOG_TITLE}>Blog</h1>
         <div className={BLOG_GRID}>
-          {NOTES.map((note) => (
+          {NOTES[language].map((note) => (
             <div
               key={note.id}
               className={BLOG_ITEM}
@@ -33,7 +38,7 @@ const Blog = () => {
                 className={BLOG_ITEM_LINK}
                 target="_blank"
               >
-                See more
+                {READ_MORE[language]}
               </Link>
             </div>
           ))}

@@ -1,3 +1,10 @@
+"use client";
+
+import { 
+  CONTACT_ME_SOCIAL_MEDIA_TEXT,
+  CONTACT_ME_TEXT_EMAIL, 
+  CONTACT_ME_TITLE_TEXT
+} from "@/app/constants/data/data";
 import { 
   CONTACT_ME_BOX,
   CONTACT_ME_CONTAINER, 
@@ -8,18 +15,20 @@ import {
   CONTACT_ME_TEXT, 
   CONTACT_ME_TITLE
 } from "@/app/constants/styles/contactMeStyles";
+import usePreferencesContext from "@/app/hooks/usePreferencesContext";
 import { SiGithub, SiLinkedin, SiMailboxdotorg } from "react-icons/si";
 
 const ContactMe = () => {
+  const { language } = usePreferencesContext();
+
   return (
     <div id="contactMe" className={CONTACT_ME_CONTAINER}>
       <div className={CONTACT_ME_SUB_CONTAINER}>
-        <h1 className={CONTACT_ME_TITLE}>Get in Touch</h1>
-        
+        <h1 className={CONTACT_ME_TITLE}>{CONTACT_ME_TITLE_TEXT[language]}</h1>
         <div className={CONTACT_ME_BOX}>
           <div className="space-y-2">
             <p className={CONTACT_ME_TEXT}>
-              Feel free to reach out via email:
+              {CONTACT_ME_TEXT_EMAIL[language]}
             </p>
             <a 
               href="mailto:ahsro99@gmail.com"
@@ -34,7 +43,7 @@ const ContactMe = () => {
 
           <div className="space-y-4">
             <p className={CONTACT_ME_TEXT}>
-              Or connect with me on:
+              {CONTACT_ME_SOCIAL_MEDIA_TEXT[language]}
             </p>
             <ul className="space-y-4">
               <li>
