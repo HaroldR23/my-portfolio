@@ -17,6 +17,7 @@ export const CONTACT_ME_SOCIAL_MEDIA_TEXT_ENG = "Or connect with me on:";
 export const CONTACT_SECTION_ENG = "Contact";
 export const VIEW_PROJECT_ENG = "• View Project";
 export const REPOSITORY_ENG = "• Repository";
+export const TECH_STACK_ENG = "Tech Stack";
 
 export const PROJECTS_LIST_ENG: Project[] = [
   {
