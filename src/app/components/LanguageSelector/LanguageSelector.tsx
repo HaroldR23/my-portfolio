@@ -1,5 +1,3 @@
-/* eslint-disable max-len */
-
 "use client";
 import { SiGoogletranslate } from "react-icons/si";
 import LanguageSelectorModal from "./LanguageSelectorModal";
@@ -7,7 +5,10 @@ import usePreferencesContext from "@/app/hooks/usePreferencesContext";
 import { useState } from "react";
 import { LANGUAGE_OPTIONS } from "@/app/constants/data/data";
 import { Languages } from "@/app/constants/enums/languages";
-import { BACKGROUND_OVERLAY, BUTTON_CONTAINER, TOOLTIP } from "@/app/constants/styles/languageSelectorStyles";
+import { 
+  BACKGROUND_OVERLAY, 
+  BUTTON_CONTAINER, TOOLTIP 
+} from "@/app/constants/styles/languageSelectorStyles";
 
 const LanguageSelector = () => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);

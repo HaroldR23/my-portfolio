@@ -50,7 +50,7 @@ const ProjectCard = ({
             rel="noopener noreferrer"
             className={LINK_STYLE}
           > 
-            • {repo.repository.includes("Monorepo") ? REPOSITORY[language] : repo.repository}
+            {repo.repository.includes("Monorepo") ? REPOSITORY[language] : `• ${repo.repository}`}
           </a>
         ))}
       </div>
