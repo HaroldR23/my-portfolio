@@ -37,6 +37,7 @@ import {
 } from "./spanish";
 import { Note } from "@/app/models/notes";
 import { Languages } from "../enums/languages";
+import { LanguageOption } from "@/app/models/languageOption";
 
 export const DEVELOPER_NAME: string = "Harold Rodriguez";
 export const COPYRIGHT_LOGO_URL = "https://i.imgur.com/qZAXWKR.png";
@@ -62,9 +63,9 @@ export const TECHNOLOGIES_LIST: string[] = [
   "Pinecone",
 ];
 
-export const LANGUAGE_OPTIONS: Languages[] = [
-  Languages.ENGLISH,
-  Languages.SPANISH,
+export const LANGUAGE_OPTIONS: LanguageOption[] = [
+  {name: Languages.ENGLISH, flag: "🇺🇸"},
+  {name: Languages.SPANISH, flag: "🇨🇴"},
 ];
 
 export const COPYRIGHT_TEXT_CONTENT: Record<string, string> = {

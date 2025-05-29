@@ -1,21 +1,22 @@
 "use client"
 
-import { useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import { PreferencesContext } from "./PreferencesContext";
+import { Languages } from "@/app/constants/enums/languages";
 
 const PreferencesProvider = ({ children }: { children: React.ReactNode }) => {
-  const [language, setLanguage] = useState<string>("english");
-	
-  useMemo(() => {
+  const [language, setLanguage] = useState<Languages>(Languages.ENGLISH);
+
+  useEffect(() => {
     if (typeof window !== "undefined") {
       const storedLanguage = localStorage.getItem("language");
-      if (storedLanguage) {
-        setLanguage(storedLanguage);
+      if (storedLanguage && storedLanguage in Languages) {
+        setLanguage(Languages[storedLanguage as keyof typeof Languages]);
       }
     }
   }, []);
 
-  const handleLanguageChange = (value: string) => {
+  const handleLanguageChange = (value: Languages) => {
     setLanguage(value);
     localStorage.setItem("language", value.toString());
   };
