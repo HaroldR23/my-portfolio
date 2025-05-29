@@ -7,9 +7,16 @@ export const COPYRIGHT_TEXT_CONTENT_ENG = "Designed and created by Harold Rodrig
 export const ABOUT_ME_TEXT_ENG = "I build robust applications, develop scalable APIs, and love working on both frontend and backend systems. I adapt quickly, thrive in team environments, and never shy away from a challenge. Whether it's learning a new framework or improving a product, I'm committed to continuous growth and delivering quality through clean, efficient code."
 export const INTRODUCTION_MY_SELF_ENG = "Hi, I'm Harold Rodriguez ";
 export const INTRODUCTION_MY_SELF_ENG_SUB_HEADER = "a passionate Software Developer who enjoys turning complex problems into elegant solutions."
-export const PROJECTS_SECTION_TITLE_ENG = "Projects";
+export const PROJECTS_ENG = "Projects";
 export const CV_BUTTON_TEXT_ENG = "Download CV";
 export const CV_DOWNLOAD_URL_ENG = "/Harold_Rodriguez_CV_eng.pdf";
+export const READ_MORE_ENG = "Read more";
+export const CONTACT_ME_TITLE_TEXT_ENG = "Get in Touch";
+export const CONTACT_ME_TEXT_ENG = "Feel free to reach out via email:";
+export const CONTACT_ME_SOCIAL_MEDIA_TEXT_ENG = "Or connect with me on:";
+export const CONTACT_SECTION_ENG = "Contact";
+export const VIEW_PROJECT_ENG = "• View Project";
+export const REPOSITORY_ENG = "• Repository";
 
 export const PROJECTS_LIST_ENG: Project[] = [
   {
@@ -110,9 +117,9 @@ export const PROJECTS_LIST_ENG: Project[] = [
   },
 ]
 
-export const NOTES: Note[] = [
+export const NOTES_ENG: Note[] = [
   {
-    description: "I'm trying to give some advice to developers who are looking for a job in 2025. I hope it helps you. (In Spanish)",
+    description: "These are some insights for developers looking for opportunities in 2025. I hope you find it useful. (In Spanish)",
     id: 1,
     title: "How to look for a job as a developer in 2025?",
     url: "https://docs.google.com/document/d/1_aqUHsoq12ySvow0ToMFtEWGiK__KQ6mdlKk6NFoxLs/edit?usp=sharing",

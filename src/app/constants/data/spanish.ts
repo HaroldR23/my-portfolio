@@ -1,14 +1,22 @@
 /* eslint-disable max-len */
 
+import { Note } from "@/app/models/notes";
 import { Project } from "@/app/models/projects";
 
 export const COPYRIGHT_TEXT_CONTENT_SPA = "Diseñado y creado por Harold Rodriguez © 2025 || Todos los derechos reservados";
 export const ABOUT_ME_TEXT_SPA = "Construyo aplicaciones robustas, desarrollo APIs escalables y disfruto trabajando tanto en frontend como en backend. Me adapto rápidamente, prospero en entornos de equipo y sin miedo a los desafíos. Ya sea aprendiendo un nuevo framework o mejorando un producto, estoy comprometido con el crecimiento continuo y con entregar calidad mediante un código limpio y eficiente.";
 export const INTRODUCTION_MY_SELF_SPA = "Hola, soy Harold Rodriguez ";
 export const INTRODUCTION_MY_SELF_SPA_SUB_HEADER = "un apasionado Desarrollador de Software que disfruta convertir problemas complejos en soluciones elegantes.";
-export const PROJECTS_SECTION_TITLE_SPA = "Proyectos";
+export const PROJECTS_SPA = "Proyectos";
 export const CV_BUTTON_TEXT_SPA = "Descargar CV";
 export const CV_DOWNLOAD_URL_SPA = "/Harold_Rodriguez_CV_esp.pdf";
+export const READ_MORE_SPA = "Leer más";
+export const CONTACT_ME_TITLE_TEXT_SPA = "Ponte en contacto";
+export const CONTACT_ME_TEXT_SPA = "No dudes en contactarme por correo electrónico:";
+export const CONTACT_ME_SOCIAL_MEDIA_TEXT_SPA = "O conéctate conmigo en:";
+export const CONTACT_SECTION_SPA = "Contacto";
+export const VIEW_PROJECT_SPA = "• Ver proyecto";
+export const REPOSITORY_SPA = "• Repositorio";
 
 export const PROJECTS_LIST_SPA: Project[] = [
   {
@@ -108,3 +116,13 @@ export const PROJECTS_LIST_SPA: Project[] = [
     github: [{url: "https://github.com/HaroldR23/pokemon-flutter", repository: "Monorepo"}],
   },
 ]
+
+export const NOTES_SPA: Note[] = [
+  {
+    description: "Estas son algunas ideas para los desarrolladores que buscan oportunidades en 2025. Espero que les resulten útiles",
+    id: 1,
+    title: "¿Cómo buscar trabajo como desarrollador en 2025?",
+    url: "https://docs.google.com/document/d/1_aqUHsoq12ySvow0ToMFtEWGiK__KQ6mdlKk6NFoxLs/edit?usp=sharing",
+  }
+];
+

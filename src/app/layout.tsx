@@ -3,8 +3,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
-import { COPYRIGHT_LOGO_URL } from "./constants/data/english";
 import PreferencesProvider from "./contexts/PreferencesContext/PreferencesProvider";
+import { COPYRIGHT_LOGO_URL } from "./constants/data/data";
+import LanguageSelector from "./components/LanguageSelector/LanguageSelector";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,6 +38,7 @@ export default function RootLayout({
         <PreferencesProvider>
           <NavBar />
           {children}
+          <LanguageSelector />
           <Footer />
         </PreferencesProvider>
       </body>

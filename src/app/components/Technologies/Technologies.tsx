@@ -7,7 +7,7 @@ import {
   TECHNOLOGY_NAME
 } from "@/app/constants/styles/technologiesStyles";
 import TechnologieIcon from "../TechnologieIcon/TechnologieIcon"
-import { TECHNOLOGIES_LIST } from "@/app/constants/data/english";
+import { TECHNOLOGIES_LIST } from "@/app/constants/data/data";
 
 const Technologies = () => {
   return (
