@@ -17,6 +17,7 @@ export const CONTACT_ME_SOCIAL_MEDIA_TEXT_SPA = "O conéctate conmigo en:";
 export const CONTACT_SECTION_SPA = "Contacto";
 export const VIEW_PROJECT_SPA = "• Ver proyecto";
 export const REPOSITORY_SPA = "• Repositorio";
+export const TECH_STACK_SPA = "Tecnologías";
 
 export const PROJECTS_LIST_SPA: Project[] = [
   {

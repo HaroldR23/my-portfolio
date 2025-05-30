@@ -15,6 +15,7 @@ import {
   PROJECTS_LIST_ENG, 
   READ_MORE_ENG,
   REPOSITORY_ENG,
+  TECH_STACK_ENG,
   VIEW_PROJECT_ENG
 } from "./english";
 import { 
@@ -33,6 +34,7 @@ import {
   PROJECTS_SPA, 
   READ_MORE_SPA,
   REPOSITORY_SPA,
+  TECH_STACK_SPA,
   VIEW_PROJECT_SPA
 } from "./spanish";
 import { Note } from "@/app/models/notes";
@@ -67,6 +69,10 @@ export const LANGUAGE_OPTIONS: LanguageOption[] = [
   {name: Languages.ENGLISH, flag: "🇺🇸"},
   {name: Languages.SPANISH, flag: "🇨🇴"},
 ];
+export const TECH_STACK: Record<string, string> = {
+  english: TECH_STACK_ENG,
+  spanish: TECH_STACK_SPA
+};
 
 export const COPYRIGHT_TEXT_CONTENT: Record<string, string> = {
   english: COPYRIGHT_TEXT_CONTENT_ENG,

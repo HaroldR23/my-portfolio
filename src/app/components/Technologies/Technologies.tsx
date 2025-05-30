@@ -1,3 +1,5 @@
+"use client";
+
 import { 
   TECHNOLOGIES_CONTAINER,
   TECHNOLOGIES_LIST_CONTAINER, 
@@ -7,12 +9,15 @@ import {
   TECHNOLOGY_NAME
 } from "@/app/constants/styles/technologiesStyles";
 import TechnologieIcon from "../TechnologieIcon/TechnologieIcon"
-import { TECHNOLOGIES_LIST } from "@/app/constants/data/data";
+import { TECH_STACK, TECHNOLOGIES_LIST } from "@/app/constants/data/data";
+import usePreferencesContext from "@/app/hooks/usePreferencesContext";
 
 const Technologies = () => {
+  const { language } = usePreferencesContext();
+
   return (
     <div className={TECHNOLOGIES_CONTAINER}>
-      <h1 className={TECHNOLOGIES_LIST_HEADER}>Tech Stack</h1>
+      <h1 className={TECHNOLOGIES_LIST_HEADER}>{TECH_STACK[language]}</h1>
       <div className={TECHNOLOGIES_LIST_CONTAINER}>
         {
           TECHNOLOGIES_LIST.map((tech: string) => (
