@@ -10,8 +10,8 @@ const PreferencesProvider = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
     if (typeof window !== "undefined") {
       const storedLanguage = localStorage.getItem("language");
-      if (storedLanguage && storedLanguage in Languages) {
-        setLanguage(Languages[storedLanguage as keyof typeof Languages]);
+      if (storedLanguage && Object.values(Languages).includes(storedLanguage as Languages)) {
+        setLanguage(storedLanguage as Languages);
       }
     }
   }, []);

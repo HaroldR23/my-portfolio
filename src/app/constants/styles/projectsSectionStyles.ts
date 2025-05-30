@@ -12,7 +12,7 @@ export const PROJECTS_LIST_CONTAINER = `
 export const PROJECT_NAME = "text-base md:text-lg lg:text-xl font-bold text-white mb-2";
 export const PROJECT_DESCRIPTION = `
   overflow-y-auto max-h-40
-  scrollbar-gray-700 scrollbar-thumb-gray-500
+  scrollbar-gray-700
   text-base md:text-lg lg:text-xl
   custom-scrollbar
 `;
