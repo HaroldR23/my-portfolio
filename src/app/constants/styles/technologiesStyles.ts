@@ -1,4 +1,4 @@
-export const TECHNOLOGIES_CONTAINER = "flex flex-col mt-10 mx-auto px-4 sm:px-6 lg:px-50";
+export const TECHNOLOGIES_CONTAINER = "mt-10 px-4 md:px-6 lg:px-6 xl:px-15 2xl:px-40";
 export const TECHNOLOGIES_LIST_HEADER = `
 	text-xl md:text-3xl lg:text-4xl
 	font-bold pb-5 tracking-tight
@@ -20,11 +20,10 @@ export const TECHNOLOGY_NAME = `
 	group-hover:text-blue-300 transition-colors duration-300
 `;
 export const TECHNOLOGIE_CARD_CONTAINER = `
-	p-2 md:p-4 lg:p-4  sm:mr-5 lg:mb-6 
-	w-85 md:w-95 lg:w-95 
-	h-auto
+	p-2 md:p-4 lg:p-4 sm:mr-5 lg:mb-6 
+	w-85 md:w-95 lg:w-95 h-auto
 `;
 export const TECHNOLOGIE_TITLE = "text-base md:text-lg lg:text-2xl font-bold text-white p-3";
 export const TECHNOLOGIES_LIST_ITEMS_CONTAINER = `
-	grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4
+	grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4
 `;
