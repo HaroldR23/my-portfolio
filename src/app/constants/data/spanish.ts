@@ -18,6 +18,10 @@ export const CONTACT_SECTION_SPA = "Contacto";
 export const VIEW_PROJECT_SPA = "• Ver proyecto";
 export const REPOSITORY_SPA = "• Repositorio";
 export const TECH_STACK_SPA = "Tecnologías";
+export const DATA_BASES_TEXT_SPA = "Bases de datos";
+export const AI_TOOLS_TEXT_SPA = "Herramientas de IA";
+export const MOBILE_TECH_STACK_TEXT_SPA = "Móvil";
+export const DEVOPS_TOOLS_TEXT_SPA = "DevOps y Herramientas";
 
 export const PROJECTS_LIST_SPA: Project[] = [
   {
@@ -126,4 +130,3 @@ export const NOTES_SPA: Note[] = [
     url: "https://docs.google.com/document/d/1_aqUHsoq12ySvow0ToMFtEWGiK__KQ6mdlKk6NFoxLs/edit?usp=sharing",
   }
 ];
-

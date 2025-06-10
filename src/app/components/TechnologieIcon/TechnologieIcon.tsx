@@ -9,11 +9,15 @@ import {
   SiExpress,
   SiFastapi,
   SiFlutter,
+  SiGit,
+  SiGithub,
+  SiGithubactions,
   SiHtml5,
   SiJavascript, 
   SiJest, 
   SiMaterialdesign, 
   SiNextdotjs, 
+  SiNodedotjs, 
   SiOpenai,
   SiPostgresql, 
   SiPytest, 
@@ -22,6 +26,7 @@ import {
   SiSass, 
   SiSqlalchemy, 
   SiTailwindcss, 
+  SiTerraform, 
   SiTypescript, 
   SiVercel, 
   SiVite
@@ -58,6 +63,15 @@ const TechnologieIcon = ({ techName }: TechnologieIconProps) => {
     pytest: <SiPytest />,
     vercel: <SiVercel />,
     docker: <SiDocker />,
+    materialui: <SiMaterialdesign />,
+    amazondynamodb: <SiAmazondynamodb />,
+    amazonwebservices: <SiAmazonwebservices />,
+    openai: <SiOpenai />,
+    nodejs: <SiNodedotjs />,
+    git: <SiGit />,
+    github: <SiGithub />,
+    terraform: <SiTerraform />,
+    cicd: <SiGithubactions />,
     pinecone: 
     <Image 
       src="/pinecone.png" 
@@ -69,7 +83,7 @@ const TechnologieIcon = ({ techName }: TechnologieIconProps) => {
     stabilityai: <Image src="/stabilityai.png" alt="Stability AI Logo" width={30} height={30} />,
   };
 
-  const techNameLower = techName.toLocaleLowerCase().replace(/[ ,.]/g, "");
+  const techNameLower = techName.toLocaleLowerCase().replace(/[ ,./]/g, "");
   return (
     <div>
       {icons[techNameLower] || <SiJavascript />}
