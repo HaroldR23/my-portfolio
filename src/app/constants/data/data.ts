@@ -1,6 +1,7 @@
 import { Project } from "@/app/models/projects";
 import { 
   ABOUT_ME_TEXT_ENG, 
+  AI_TOOLS_TEXT_ENG, 
   CONTACT_ME_SOCIAL_MEDIA_TEXT_ENG, 
   CONTACT_ME_TEXT_ENG, 
   CONTACT_ME_TITLE_TEXT_ENG, 
@@ -8,8 +9,11 @@ import {
   COPYRIGHT_TEXT_CONTENT_ENG, 
   CV_BUTTON_TEXT_ENG, 
   CV_DOWNLOAD_URL_ENG, 
+  DATA_BASES_TEXT_ENG, 
+  DEVOPS_TOOLS_TEXT_ENG, 
   INTRODUCTION_MY_SELF_ENG, 
   INTRODUCTION_MY_SELF_ENG_SUB_HEADER, 
+  MOBILE_TECH_STACK_TEXT_ENG, 
   NOTES_ENG, 
   PROJECTS_ENG, 
   PROJECTS_LIST_ENG, 
@@ -20,6 +24,7 @@ import {
 } from "./english";
 import { 
   ABOUT_ME_TEXT_SPA, 
+  AI_TOOLS_TEXT_SPA, 
   CONTACT_ME_SOCIAL_MEDIA_TEXT_SPA, 
   CONTACT_ME_TEXT_SPA, 
   CONTACT_ME_TITLE_TEXT_SPA, 
@@ -27,8 +32,11 @@ import {
   COPYRIGHT_TEXT_CONTENT_SPA, 
   CV_BUTTON_TEXT_SPA, 
   CV_DOWNLOAD_URL_SPA, 
+  DATA_BASES_TEXT_SPA, 
+  DEVOPS_TOOLS_TEXT_SPA, 
   INTRODUCTION_MY_SELF_SPA, 
   INTRODUCTION_MY_SELF_SPA_SUB_HEADER, 
+  MOBILE_TECH_STACK_TEXT_SPA, 
   NOTES_SPA, 
   PROJECTS_LIST_SPA, 
   PROJECTS_SPA, 
@@ -44,6 +52,71 @@ import { LanguageOption } from "@/app/models/languageOption";
 export const DEVELOPER_NAME: string = "Harold Rodriguez";
 export const COPYRIGHT_LOGO_URL = "https://i.imgur.com/qZAXWKR.png";
 export const CV_DOWNLOAD_NAME = "Harold_Rodriguez_CV.pdf";
+export const FRONTEND_TEXT = "Frontend";
+export const BACKEND_TEXT = "Backend";
+
+export const FRONTEND_TECH_STACK: string[] = [
+  "JavaScript",
+  "TypeScript",
+  "React.js",
+  "HTML",
+  "CSS",
+  "Material UI",
+  "Tailwind CSS",
+  "Sass"
+];
+
+export const BACKEND_TECH_STACK: string[] = [
+  "Python",
+  "FastAPI",
+  "Node.js"
+];
+
+export const MOBILE_TECH_STACK: string[] = [
+  "Flutter",
+  "Dart"
+];
+export const AI_TECH_STACK: string[] = [
+  "OpenAI API",
+  "Stability AI",
+  "Langchain"
+];
+
+export const DATABASE_TECH_STACK: string[] = [
+  "PostgreSQL",
+  "Dynamodb",
+  "Pinecone"
+];
+
+export const DEVOPS_TECH_STACK: string[] = [
+  "Docker",
+  "AWS",
+  "Git",
+  "GitHub",
+  "Terraform",
+  "CI/CD"
+];
+
+export const DATA_BASES_TEXT: Record<string, string> = {
+  english: DATA_BASES_TEXT_ENG,
+  spanish: DATA_BASES_TEXT_SPA
+};
+
+export const AI_TOOLS_TEXT: Record<string, string> = {
+  english: AI_TOOLS_TEXT_ENG,
+  spanish: AI_TOOLS_TEXT_SPA
+};
+
+export const MOBILE_TECH_STACK_TEXT: Record<string, string> = {
+  english: MOBILE_TECH_STACK_TEXT_ENG,
+  spanish: MOBILE_TECH_STACK_TEXT_SPA
+};
+
+export const DEVOPS_TOOLS_TEXT: Record<string, string> = {
+  english: DEVOPS_TOOLS_TEXT_ENG,
+  spanish: DEVOPS_TOOLS_TEXT_SPA
+};
+
 export const TECHNOLOGIES_LIST: string[] = [
   "JavaScript",
   "TypeScript",

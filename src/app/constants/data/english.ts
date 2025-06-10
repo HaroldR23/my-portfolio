@@ -18,7 +18,10 @@ export const CONTACT_SECTION_ENG = "Contact";
 export const VIEW_PROJECT_ENG = "• View Project";
 export const REPOSITORY_ENG = "• Repository";
 export const TECH_STACK_ENG = "Tech Stack";
-
+export const DATA_BASES_TEXT_ENG = "Databases";
+export const AI_TOOLS_TEXT_ENG = "AI Tools";
+export const MOBILE_TECH_STACK_TEXT_ENG = "Mobile";
+export const DEVOPS_TOOLS_TEXT_ENG = "DevOps and Tools";
 export const PROJECTS_LIST_ENG: Project[] = [
   {
     id: 6,
@@ -126,4 +129,3 @@ export const NOTES_ENG: Note[] = [
     url: "https://docs.google.com/document/d/1_aqUHsoq12ySvow0ToMFtEWGiK__KQ6mdlKk6NFoxLs/edit?usp=sharing",
   }
 ];
-
