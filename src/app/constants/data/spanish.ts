@@ -25,6 +25,38 @@ export const DEVOPS_TOOLS_TEXT_SPA = "DevOps y Herramientas";
 
 export const PROJECTS_LIST_SPA: Project[] = [
   {
+    id: 7,
+    name: "MerySu Sparkle Cleaning",
+    description: "Sitio web profesional para un servicio de limpieza, desarrollado con Next.js, React, TypeScript, Tailwind CSS y Motion. El sitio presenta los servicios de limpieza para hogares, oficinas y espacios comerciales con un diseño moderno y accesible, destacando la propuesta de valor y permitiendo a los usuarios explorar y conocer las soluciones ofrecidas para mantener sus espacios impecables.",
+    technologies: [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+      "HTML",
+      "CSS"
+    ],
+    github: [],
+    url: "https://merysu-cleaning.com/"
+  }, 
+  {
+    id: 8,
+    name: "Dulce Paladar",
+    description: "Sitio web para una pastelería y negocio de postres, construido con Next.js, React, TypeScript, Tailwind CSS y Motion. El proyecto destaca productos artesanales y opciones de personalización con un diseño apetecible y visualmente atractivo, permitiendo a los visitantes explorar las opciones y conectarse con el negocio de forma intuitiva.",
+    technologies: [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+      "HTML",
+      "CSS"
+    ],
+    github: [],
+    url: "https://dulcepaladar.net/"
+  },
+  {
     id: 6,
     name: "Virtual Marketing Assistant",
     description: "Un chatbot potenciado con IA diseñado para agilizar la creación de contenido en redes sociales. Al interactuar con los usuarios a través de unas preguntas simples, genera automáticamente contenido personalizado list para publicar en plataformas como Instagram, X (Twitter), Facebook y LinkedIn. Su característica más destacada es un sistema de Generación Aumentada por Recuperación (RAG), que permite a los usuarios subir documentos que el asistente utiliza como conocimiento contextual, asegurando que el contenido generado se alinee perfectamente con la marca o los objetivos de campaña del usuario. Ayudé a construir esta herramienta mientras trabajaba en una empresa, enfocándome en la integración de IA, generación de contenido con contexto y en ofrecer una experiencia fluida para los profesionales del marketing.",
@@ -128,5 +160,11 @@ export const NOTES_SPA: Note[] = [
     id: 1,
     title: "¿Cómo buscar trabajo como desarrollador en 2025?",
     url: "https://docs.google.com/document/d/1_aqUHsoq12ySvow0ToMFtEWGiK__KQ6mdlKk6NFoxLs/edit?usp=sharing",
+  },
+  {
+    description: "En este documento encontrarás conceptos basicos de Cloud Computing que todo desarrollador debe conocer en 2026. Espero que te sea de utilidad.",
+    id: 2,
+    title: "Conceptos básicos de Cloud Computing para desarrolladores en 2026",
+    url: "https://docs.google.com/document/d/1YTs9PuWAUx-nAm7FNrfmUCE12pwibmWZ9PQhEduWL1w/edit?usp=sharing",
   }
 ];

@@ -24,6 +24,38 @@ export const MOBILE_TECH_STACK_TEXT_ENG = "Mobile";
 export const DEVOPS_TOOLS_TEXT_ENG = "DevOps and Tools";
 export const PROJECTS_LIST_ENG: Project[] = [
   {
+    id: 7,
+    name: "MerySu Sparkle Cleaning",
+    description: "A professional cleaning service website. It showcases cleaning services for homes, offices, and rentals, highlighting eco-friendly products, flexible scheduling, and a smooth user experience for booking services online.",
+    technologies: [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+      "HTML",
+      "CSS"
+    ],
+    github: [],
+    url: "https://merysu-cleaning.com/"
+  },
+  {
+    id: 8,
+    name: "Dulce Paladar",
+    description: "A Next.js website for an artisanal bakery that offers custom cakes, cupcakes, cookies and dessert boxes. The site highlights product catalogs, personalization options, and brand story, delivering a warm, appetizing experience for visitors looking to order handcrafted treats.",
+    technologies: [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+      "HTML",
+      "CSS"
+    ],
+    github: [],
+    url: "https://dulcepaladar.net/"
+  },
+  {
     id: 6,
     name: "Virtual Marketing Assistant",
     description: "An AI-powered chatbot designed to streamline social media content creation. By interacting with users through a few simple questions, it automatically generates personalized posts ready to publish on platforms like Instagram, X (Twitter), Facebook, and LinkedIn. Its standout feature is a Retrieval-Augmented Generation (RAG) system, which lets users upload documents that the assistant uses as contextual knowledge—ensuring the content it generates aligns perfectly with the user’s brand or campaign goals. I helped build this tool while working at a company, focusing on AI integration, context-aware content generation, and delivering a seamless user experience for marketers.",
@@ -127,5 +159,11 @@ export const NOTES_ENG: Note[] = [
     id: 1,
     title: "How to look for a job as a developer in 2025?",
     url: "https://docs.google.com/document/d/1_aqUHsoq12ySvow0ToMFtEWGiK__KQ6mdlKk6NFoxLs/edit?usp=sharing",
+  },
+  {
+    description: "In this document, you will find basic Cloud Computing concepts that every developer should know in 2026. I hope you find it useful.",
+    id: 2,
+    title: "Basic Cloud Computing Concepts for Developers in 2026",
+    url: "https://docs.google.com/document/d/1YTs9PuWAUx-nAm7FNrfmUCE12pwibmWZ9PQhEduWL1w/edit?usp=sharing",
   }
 ];
