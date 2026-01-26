@@ -15,6 +15,7 @@ import {
   INTRODUCTION_MY_SELF_ENG_SUB_HEADER, 
   MOBILE_TECH_STACK_TEXT_ENG, 
   NOTES_ENG, 
+  OPEN_TO_OPPORTUNITIES_ENG, 
   PROJECTS_ENG, 
   PROJECTS_LIST_ENG, 
   READ_MORE_ENG,
@@ -38,6 +39,7 @@ import {
   INTRODUCTION_MY_SELF_SPA_SUB_HEADER, 
   MOBILE_TECH_STACK_TEXT_SPA, 
   NOTES_SPA, 
+  OPEN_TO_OPPORTUNITIES_SPA, 
   PROJECTS_LIST_SPA, 
   PROJECTS_SPA, 
   READ_MORE_SPA,
@@ -167,6 +169,11 @@ export const INTRODUCTION_MY_SELF_SUB_HEADER: Record<string, string> = {
   spanish: INTRODUCTION_MY_SELF_SPA_SUB_HEADER
 }
 
+export const OPEN_TO_OPPORTUNITIES: Record<string, string> = {
+  english: OPEN_TO_OPPORTUNITIES_ENG,
+  spanish: OPEN_TO_OPPORTUNITIES_SPA
+}
+
 export const PROJECTS_SECTION_TITLE: Record<string, string> = {
   english: PROJECTS_ENG,
   spanish: PROJECTS_SPA
@@ -231,3 +238,12 @@ export const REPOSITORY: Record<string, string> = {
   english: REPOSITORY_ENG,
   spanish: REPOSITORY_SPA
 }
+
+export const navItems = (language : Languages) => ([
+  { label: 'Info', href: '#' },
+  { label: PROJECTS[language], href: '#projects' },
+  { label: 'Experience', href: '#experience' },
+  { label: 'Services', href: '#services' },
+  { label: 'Blog', href: '#blog' },
+  { label: CONTACT_SECTION[language], href: '#contactMe' },
+]);

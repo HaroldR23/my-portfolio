@@ -15,13 +15,15 @@ export const CONTACT_ME_TITLE_TEXT_ENG = "Get in Touch";
 export const CONTACT_ME_TEXT_ENG = "Feel free to reach out via email:";
 export const CONTACT_ME_SOCIAL_MEDIA_TEXT_ENG = "Or connect with me on:";
 export const CONTACT_SECTION_ENG = "Contact";
-export const VIEW_PROJECT_ENG = "• View Project";
+export const VIEW_PROJECT_ENG = "View Project";
 export const REPOSITORY_ENG = "• Repository";
 export const TECH_STACK_ENG = "Tech Stack";
 export const DATA_BASES_TEXT_ENG = "Databases";
 export const AI_TOOLS_TEXT_ENG = "AI Tools";
 export const MOBILE_TECH_STACK_TEXT_ENG = "Mobile";
 export const DEVOPS_TOOLS_TEXT_ENG = "DevOps and Tools";
+export const OPEN_TO_OPPORTUNITIES_ENG = "Open to Opportunities";
+
 export const PROJECTS_LIST_ENG: Project[] = [
   {
     id: 7,
