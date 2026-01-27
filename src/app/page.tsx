@@ -7,6 +7,7 @@ import Technologies from "./components/Technologies/Technologies";
 const HomePage = () => {
   return (
     <div>
+
       <AboutMe />
       <Technologies />
       <ProjectsSection />

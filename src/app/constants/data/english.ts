@@ -18,6 +18,7 @@ export const CONTACT_SECTION_ENG = "Contact";
 export const VIEW_PROJECT_ENG = "View Project";
 export const REPOSITORY_ENG = "• Repository";
 export const TECH_STACK_ENG = "Tech Stack";
+export const TECH_STACK_SUBTITLE_ENG = "Technologies I use to build production-ready software";
 export const DATA_BASES_TEXT_ENG = "Databases";
 export const AI_TOOLS_TEXT_ENG = "AI Tools";
 export const MOBILE_TECH_STACK_TEXT_ENG = "Mobile";
