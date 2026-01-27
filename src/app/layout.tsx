@@ -1,21 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
 import PreferencesProvider from "./contexts/PreferencesContext/PreferencesProvider";
 import { COPYRIGHT_LOGO_URL } from "./constants/data/data";
 import LanguageSelector from "./components/LanguageSelector/LanguageSelector";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Portfolio | Harold Rodriguez",
@@ -32,15 +21,15 @@ export default function RootLayout({
       <head>
         <link rel="icon" href={COPYRIGHT_LOGO_URL} />
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <PreferencesProvider>
-          <NavBar />
-          {children}
-          <LanguageSelector />
-          <Footer />
-        </PreferencesProvider>
+      <body>
+        <div className="min-h-screen bg-gradient-to-br from-blue-950/50 via-slate-950 to-slate-950">
+          <PreferencesProvider>
+            <NavBar />
+            {children}
+            <LanguageSelector />
+            <Footer />
+          </PreferencesProvider>
+        </div>
       </body>
     </html>
   );

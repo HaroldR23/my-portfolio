@@ -23,10 +23,6 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 py-20 overflow-hidden">
-      {/* Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-950/50 via-slate-950 to-slate-950" />
-      
-      {/* Animated Gradient Orbs */}
       <div className="absolute top-20 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse" />
       <div className="absolute bottom-20 left-1/4 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
 
@@ -97,8 +93,6 @@ const Hero = () => {
               className="relative w-64 h-64 md:w-120 md:h-120 rounded-full object-cover border-4 border-blue-500/20 shadow-2xl"
             />
             
-            {/* Glow Effect */}
-            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-500/20 to-transparent" />
           </div>
         </motion.div>
       </div>

@@ -21,6 +21,7 @@ import {
   READ_MORE_ENG,
   REPOSITORY_ENG,
   TECH_STACK_ENG,
+  TECH_STACK_SUBTITLE_ENG,
   VIEW_PROJECT_ENG
 } from "./english";
 import { 
@@ -45,6 +46,7 @@ import {
   READ_MORE_SPA,
   REPOSITORY_SPA,
   TECH_STACK_SPA,
+  TECH_STACK_SUBTITLE_SPA,
   VIEW_PROJECT_SPA
 } from "./spanish";
 import { Note } from "@/app/models/notes";
@@ -148,6 +150,10 @@ export const TECH_STACK: Record<string, string> = {
   english: TECH_STACK_ENG,
   spanish: TECH_STACK_SPA
 };
+export const TECH_STACK_SUBTITLE: Record<string, string> = {
+  english: TECH_STACK_SUBTITLE_ENG,
+  spanish: TECH_STACK_SUBTITLE_SPA
+};  
 
 export const COPYRIGHT_TEXT_CONTENT: Record<string, string> = {
   english: COPYRIGHT_TEXT_CONTENT_ENG,

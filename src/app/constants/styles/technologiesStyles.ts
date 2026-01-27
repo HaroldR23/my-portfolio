@@ -1,7 +1,6 @@
-export const TECHNOLOGIES_CONTAINER = "mt-10 px-4 md:px-6 lg:px-6 xl:px-15 2xl:px-40";
+export const TECHNOLOGIES_CONTAINER = "py-20 px-4 relative";
 export const TECHNOLOGIES_LIST_HEADER = `
-	text-xl md:text-3xl lg:text-4xl
-	font-bold pb-5 tracking-tight
+"text-3xl md:text-4xl font-bold text-white mb-4"
 `;
 export const TECHNOLOGIES_LIST_CONTAINER = `
 	grid grid-cols-2 gap-2 md:gap-4 lg:gap-4
@@ -25,5 +24,5 @@ export const TECHNOLOGIE_CARD_CONTAINER = `
 `;
 export const TECHNOLOGIE_TITLE = "text-base md:text-lg lg:text-2xl font-bold text-white p-3";
 export const TECHNOLOGIES_LIST_ITEMS_CONTAINER = `
-	grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4
+	grid md:grid-cols-2 lg:grid-cols-4 gap-8
 `;
