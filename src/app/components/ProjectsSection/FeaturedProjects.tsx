@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Button from '../common/Button';
 import { Languages } from '@/app/constants/enums/languages';
 import { FEATURED_PROJECTS, FEATURED_PROJECTS_SUB, FEATURED_WORK, PRBLOEM_TITLE, PROJECTS_LIST, SOLUTION_TITLE, VIEW_PROJECT } from '@/app/constants/data/data';
+import TechnologieIcon from '../TechnologieIcon/TechnologieIcon';
 
 
 const FeaturedProjects = ({ language }: { language: Languages }) => {
@@ -57,7 +58,7 @@ const FeaturedProjects = ({ language }: { language: Languages }) => {
                     <h3 className="text-2xl md:text-3xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
                       {project.name}
                     </h3>
-                    <p className="text-slate-300 leading-relaxed mb-4">
+                    <p className="text-sm md:text-base text-slate-300 leading-relaxed mb-4">
                       {project.description}
                     </p>
                   </div>
@@ -65,13 +66,13 @@ const FeaturedProjects = ({ language }: { language: Languages }) => {
                   {/* Problem → Solution */}
                   <div className="space-y-3 p-4 bg-slate-900/50 rounded-xl border border-blue-500/10">
                     <div>
-                      <span className="text-xs uppercase text-red-400 font-semibold">{PRBLOEM_TITLE[language]}</span>
-                      <p className="text-sm text-slate-400 mt-1">{project.problem}</p>
+                      <span className="text-sm md:text-base uppercase text-red-400 font-semibold">{PRBLOEM_TITLE[language]}</span>
+                      <p className="text-sm md:text-base text-slate-400 mt-1">{project.problem}</p>
                     </div>
                     <div className="h-px bg-blue-500/20" />
                     <div>
-                      <span className="text-xs uppercase text-green-400 font-semibold">{SOLUTION_TITLE[language]}</span>
-                      <p className="text-sm text-slate-400 mt-1">{project.solution}</p>
+                      <span className="text-sm md:text-base uppercase text-green-400 font-semibold">{SOLUTION_TITLE[language]}</span>
+                      <p className="text-sm md:text-base text-slate-400 mt-1">{project.solution}</p>
                     </div>
                   </div>
 
@@ -81,9 +82,10 @@ const FeaturedProjects = ({ language }: { language: Languages }) => {
                       <Badge 
                         key={tech}
                         variant="outline"
-                        className="bg-blue-500/5 text-blue-300 border-blue-500/20"
+                        className="bg-blue-500/5 text-blue-300 border-blue-500/20 text-sm"
                       >
                         {tech}
+                        <TechnologieIcon techName={tech} />
                       </Badge>
                     ))}
                   </div>
@@ -91,7 +93,7 @@ const FeaturedProjects = ({ language }: { language: Languages }) => {
                   {/* CTAs */}
                   <div className="flex gap-3 pt-2">
                     <Button
-                      className="bg-blue-600 hover:bg-blue-700 shadow-lg shadow-blue-500/25"
+                      className="bg-blue-600 hover:bg-blue-700 shadow-lg shadow-blue-500/25 text-sm md:text-base"
                       asChild
                     >
                       <a href={project.url} target="_blank" rel="noopener noreferrer">

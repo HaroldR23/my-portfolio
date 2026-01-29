@@ -2,6 +2,7 @@
 
 import usePreferencesContext from "@/app/hooks/usePreferencesContext";
 import FeaturedProjects from "./FeaturedProjects";
+import OtherProjects from "./OtherProjects";
 
 
 const ProjectsSection = () => {
@@ -10,6 +11,7 @@ const ProjectsSection = () => {
   return (
     <div>
       <FeaturedProjects language={language}/>
+      <OtherProjects language={language}/>
     </div>
   );
 };  

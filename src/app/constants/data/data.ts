@@ -267,6 +267,11 @@ export const OTHER_PROJECTS: Record<string, string> = {
   spanish: OTHER_PROJECTS_SPA
 }
 
+export const OTHER_PROJECTS_SUB: Record<string, string> = {
+  english: "Additional work and projects to practice new technologies",
+  spanish: "Trabajos y proyectos adicionales para practicar nuevas tecnologías"
+}
+
 export const CONTACT_SECTION: Record<string, string> = {
   english: CONTACT_SECTION_ENG,
   spanish: CONTACT_SECTION_SPA
