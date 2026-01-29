@@ -44,8 +44,8 @@ const NavBar = () => {
             : 'bg-transparent'
         }`}
       >
-        <div className="max-w-6xl mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
+        <div className="mx-auto px-4 py-4">
+          <div className="flex items-center justify-around">
             {/* Logo */}
             <button 
               onClick={() => handleNavClick('#')}
