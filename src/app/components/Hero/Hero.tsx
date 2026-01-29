@@ -97,37 +97,7 @@ const Hero = () => {
         </motion.div>
       </div>
     </section>
-  )
-
-  // return (
-  //   <div id="Hero" className={ABOUT_ME_CONTAINER}>
-  //     {isMobile && <Image
-  //       alt="public/hr_picture.png" 
-  //       src="/hr_picture.png" className={IMAGE_STYLE} width={250} height={250}
-  //     />}
-  //     <div className={TEXT_CONTAINER}>
-  //       <h1 className={INTRODUCTION_MY_SELF_STYLE}>{INTRODUCTION_MY_SELF[language]}</h1>
-  //       <h3 className="text-base sm:text-lg md:text-lg lg:text-xl font-bold tracking-tight">
-  //         {INTRODUCTION_MY_SELF_SUB_HEADER[language]}
-  //       </h3>
-  //       <p className={PARAGRAPH_STYLE}>
-  //         {ABOUT_ME_TEXT[language]}
-  //       </p>
-  //       <a 
-  //         href={CV_DOWNLOAD_URL[language]} 
-  //         download={CV_DOWNLOAD_NAME}
-  //         className={BUTTON_STYLE}
-  //       >
-  //         {CV_BUTTON_TEXT[language]}
-  //       </a>
-  //     </div>
-  //     {!isMobile && <Image
-  //       alt="public/hr_picture.png" 
-  //       src="/hr_picture.png" 
-  //       className={IMAGE_STYLE} width={400} height={400}
-  //     />}
-  //   </div>
-  // );
+  );
 };
 
 export default Hero;

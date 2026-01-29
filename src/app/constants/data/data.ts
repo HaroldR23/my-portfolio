@@ -11,11 +11,15 @@ import {
   CV_DOWNLOAD_URL_ENG, 
   DATA_BASES_TEXT_ENG, 
   DEVOPS_TOOLS_TEXT_ENG, 
+  FEATURED_PROJECTS_ENG, 
+  FEATURED_PROJECTS_SUB_ENG, 
+  FEATURED_WORK_ENG, 
   INTRODUCTION_MY_SELF_ENG, 
   INTRODUCTION_MY_SELF_ENG_SUB_HEADER, 
   MOBILE_TECH_STACK_TEXT_ENG, 
   NOTES_ENG, 
   OPEN_TO_OPPORTUNITIES_ENG, 
+  OTHER_PROJECTS_ENG, 
   PROJECTS_ENG, 
   PROJECTS_LIST_ENG, 
   READ_MORE_ENG,
@@ -36,11 +40,15 @@ import {
   CV_DOWNLOAD_URL_SPA, 
   DATA_BASES_TEXT_SPA, 
   DEVOPS_TOOLS_TEXT_SPA, 
+  FEATURED_PROJECTS_SPA, 
+  FEATURED_PROJECTS_SUB_SPA, 
+  FEATURED_WORK_SPA, 
   INTRODUCTION_MY_SELF_SPA, 
   INTRODUCTION_MY_SELF_SPA_SUB_HEADER, 
   MOBILE_TECH_STACK_TEXT_SPA, 
   NOTES_SPA, 
   OPEN_TO_OPPORTUNITIES_SPA, 
+  OTHER_PROJECTS_SPA, 
   PROJECTS_LIST_SPA, 
   PROJECTS_SPA, 
   READ_MORE_SPA,
@@ -228,6 +236,35 @@ export const CONTACT_ME_SOCIAL_MEDIA_TEXT: Record<string, string> = {
 export const PROJECTS: Record<string, string> = {
   english: PROJECTS_ENG,
   spanish: PROJECTS_SPA
+}
+
+export const FEATURED_PROJECTS: Record<string, string> = {
+  english: FEATURED_PROJECTS_ENG,
+  spanish: FEATURED_PROJECTS_SPA
+}
+
+export const FEATURED_PROJECTS_SUB: Record<string, string> = {
+  english: FEATURED_PROJECTS_SUB_ENG,
+  spanish: FEATURED_PROJECTS_SUB_SPA
+}
+
+export const FEATURED_WORK: Record<string, string> = {
+  english: FEATURED_WORK_ENG,
+  spanish: FEATURED_WORK_SPA
+}
+
+export const PRBLOEM_TITLE: Record<string, string> = {
+  english: "Problem",
+  spanish: "Problema"
+}
+
+export const SOLUTION_TITLE: Record<string, string> = {
+  english: "Solution",
+  spanish: "Solución"
+}
+export const OTHER_PROJECTS: Record<string, string> = {
+  english: OTHER_PROJECTS_ENG,
+  spanish: OTHER_PROJECTS_SPA
 }
 
 export const CONTACT_SECTION: Record<string, string> = {

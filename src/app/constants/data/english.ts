@@ -15,7 +15,11 @@ export const CONTACT_ME_TITLE_TEXT_ENG = "Get in Touch";
 export const CONTACT_ME_TEXT_ENG = "Feel free to reach out via email:";
 export const CONTACT_ME_SOCIAL_MEDIA_TEXT_ENG = "Or connect with me on:";
 export const CONTACT_SECTION_ENG = "Contact";
-export const VIEW_PROJECT_ENG = "View Project";
+export const VIEW_PROJECT_ENG = "View Projects";
+export const FEATURED_PROJECTS_ENG = "Featured Projects";
+export const FEATURED_PROJECTS_SUB_ENG = "Showcasing my best work and problem-solving approach";
+export const FEATURED_WORK_ENG = "Featured Work";
+export const OTHER_PROJECTS_ENG = "Other Projects";
 export const REPOSITORY_ENG = "• Repository";
 export const TECH_STACK_ENG = "Tech Stack";
 export const TECH_STACK_SUBTITLE_ENG = "Technologies I use to build production-ready software";
@@ -29,7 +33,12 @@ export const PROJECTS_LIST_ENG: Project[] = [
   {
     id: 7,
     name: "MerySu Sparkle Cleaning",
-    description: "A professional cleaning service website. It showcases cleaning services for homes, offices, and rentals, highlighting eco-friendly products, flexible scheduling, and a smooth user experience for booking services online.",
+    description:
+      "A professional cleaning service website showcasing services for homes, offices, and rentals, with a strong focus on eco-friendly products and seamless online booking.",
+    problem:
+      "The client needed a modern online presence to clearly communicate services and allow potential customers to book cleanings easily.",
+    solution:
+      "I built a responsive and visually clean website with clear service sections, smooth animations, and an intuitive structure to improve user trust and conversions.",
     technologies: [
       "React.js",
       "Next.js",
@@ -37,15 +46,21 @@ export const PROJECTS_LIST_ENG: Project[] = [
       "Tailwind CSS",
       "Framer Motion",
       "HTML",
-      "CSS"
+      "CSS",
     ],
     github: [],
-    url: "https://merysu-cleaning.com/"
+    url: "https://merysu-cleaning.com/",
+    image: "/merysu.png",
   },
   {
     id: 8,
     name: "Dulce Paladar",
-    description: "A Next.js website for an artisanal bakery that offers custom cakes, cupcakes, cookies and dessert boxes. The site highlights product catalogs, personalization options, and brand story, delivering a warm, appetizing experience for visitors looking to order handcrafted treats.",
+    description:
+      "A Next.js website for an artisanal bakery offering custom cakes, cupcakes, cookies, and dessert boxes, designed to reflect a warm and appetizing brand identity.",
+    problem:
+      "The bakery needed a digital showcase that highlighted handcrafted products while conveying trust and a strong brand story.",
+    solution:
+      "I designed and developed a visually rich website with engaging imagery, smooth animations, and clear product presentation to enhance the customer experience.",
     technologies: [
       "React.js",
       "Next.js",
@@ -53,15 +68,40 @@ export const PROJECTS_LIST_ENG: Project[] = [
       "Tailwind CSS",
       "Framer Motion",
       "HTML",
-      "CSS"
+      "CSS",
     ],
     github: [],
-    url: "https://dulcepaladar.net/"
+    url: "https://dulcepaladar.net/",
+    image: "/dulce_paladar.png",
+  },
+  {
+    id: 9,
+    name: "VA RO DESIGN – Interior Design Portfolio",
+    description: "Online portfolio of VA RO DESIGN, an interior design studio that creates timeless and refined spaces by combining architectural vision with elegant contemporary style.",
+    problem: "The designer needed a professional online presence to showcase her interior design services, decorative concepts, and 3D visualization capabilities to attract clients and communicate her aesthetic approach clearly.",
+    solution: "The website presents a clean and visually striking experience that organizes services, design philosophy, and selected works to build credibility and allow potential clients to explore her design offerings.",
+    technologies: [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+      "HTML",
+      "CSS",
+    ],
+    github: [],
+    url: "https://valentina-portfolio-lovat.vercel.app/",
+    image: "/valens_portfolio.png"
   },
   {
     id: 6,
     name: "Virtual Marketing Assistant",
-    description: "An AI-powered chatbot designed to streamline social media content creation. By interacting with users through a few simple questions, it automatically generates personalized posts ready to publish on platforms like Instagram, X (Twitter), Facebook, and LinkedIn. Its standout feature is a Retrieval-Augmented Generation (RAG) system, which lets users upload documents that the assistant uses as contextual knowledge—ensuring the content it generates aligns perfectly with the user’s brand or campaign goals. I helped build this tool while working at a company, focusing on AI integration, context-aware content generation, and delivering a seamless user experience for marketers.",
+    description:
+      "An AI-powered chatbot that automates social media content creation using contextual knowledge and document-based inputs.",
+    problem:
+      "Marketers needed a faster way to generate on-brand content without manually rewriting posts for each platform.",
+    solution:
+      "I contributed to building an AI assistant using RAG architecture, enabling document-based context injection and multi-platform content generation.",
     technologies: [
       "Python",
       "AWS",
@@ -71,31 +111,41 @@ export const PROJECTS_LIST_ENG: Project[] = [
       "Tailwind CSS",
       "Pinecone",
       "Stability AI",
-      "Javascript",
+      "JavaScript",
       "HTML",
       "CSS",
     ],
     github: [],
-    url: "https://campaignsplanet.com/"
+    url: "https://campaignsplanet.com/",
+    image: "/images/projects/virtual-marketing-assistant.webp",
   },
   {
     id: 1,
     name: "Portfolio",
-    description: "This very portfolio site, showcasing my work and experience. Currently in active development — check the repository for progress and updates.",
-    github: [{url: "https://github.com/HaroldR23/my-portfolio", repository: "Monorepo"}],
-    technologies: [
-      "Next.js", 
-      "TypeScript", 
-      "Tailwind CSS",
-      "React.js",
+    description:
+      "My personal portfolio showcasing selected projects, skills, and professional experience. Continuously evolving with new improvements.",
+    problem:
+      "I needed a central place to present my work in a professional, modern, and recruiter-friendly way.",
+    solution:
+      "I built a performant and animated portfolio using Next.js and Tailwind, focusing on clarity, aesthetics, and scalability.",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React.js"],
+    github: [
+      {
+        repository: "Monorepo",
+        url: "https://github.com/HaroldR23/my-portfolio",
+      },
     ],
-    url: undefined,
+    image: "/images/projects/portfolio.webp",
   },
   {
     id: 2,
     name: "Dental Lab Web Site",
-    description: "A fully responsive website developed for a dental lab. It provides information about the lab, allows users to schedule appointments and contact details. Admin panel for adding new products and managing appointments. (In progress)",
-    url: "https://dental-lab-website-brown.vercel.app/",
+    description:
+      "A full-stack web platform for a dental lab, including appointment scheduling, product management, and an admin panel.",
+    problem:
+      "The dental lab required a digital system to manage appointments and products efficiently.",
+    solution:
+      "I developed a full-stack solution with a modern frontend and a robust backend API, enabling better operational control and scalability.",
     technologies: [
       "React.js",
       "TypeScript",
@@ -109,52 +159,79 @@ export const PROJECTS_LIST_ENG: Project[] = [
       "Vercel",
       "pytest",
       "SQLAlchemy",
-      "Vite"
+      "Vite",
     ],
-    github: [{repository: "Frontend", url: "https://github.com/HaroldR23/dental-lab-website"}, {repository: "Backend", url: "https://github.com/HaroldR23/dental-lab-website-backend"}],
+    github: [
+      {
+        repository: "Frontend",
+        url: "https://github.com/HaroldR23/dental-lab-website",
+      },
+      {
+        repository: "Backend",
+        url: "https://github.com/HaroldR23/dental-lab-website-backend",
+      },
+    ],
+    url: "https://dental-lab-website-brown.vercel.app/",
+    image: "/images/projects/dental-lab.webp",
   },
   {
     id: 3,
     name: "E-commerce",
-    description: "An academic group project developed with a team of 5, as part of a Full Stack Web Developer certification. Includes product browsing, cart functionality and rating products.",
-    url: undefined,
+    description:
+      "An academic group project developed as part of a Full Stack Web Developer certification, featuring product browsing, cart functionality, and ratings.",
     technologies: [
       "React.js",
-      "Javascript",
+      "JavaScript",
       "HTML",
       "CSS",
-      "Nodejs",
-      "Express"
+      "Node.js",
+      "Express",
     ],
-    github: [{url: "https://github.com/FelipeS02/E-Commerce-G7", repository: "Monorepo"}],
+    github: [
+      {
+        repository: "Monorepo",
+        url: "https://github.com/FelipeS02/E-Commerce-G7",
+      },
+    ],
+    image: "/images/projects/ecommerce.webp",
   },
   {
     id: 4,
     name: "Web Pokémon App",
-    description: "A static web application that fetches and displays Pokémon data from an API. Includes functionality to create new Pokémon (stored in memory only). (Academic project)",
-    url: undefined,
+    description:
+      "A web application that fetches Pokémon data from an external API and allows users to create new Pokémon entries (in-memory).",
     technologies: [
       "React.js",
-      "Javascript",
+      "JavaScript",
       "HTML",
       "CSS",
-      "Nodejs",
-      "Express"
+      "Node.js",
+      "Express",
     ],
-    github: [{url: "https://github.com/Harold930/PI-POKEMON", repository: "Monorepo"}],
+    github: [
+      {
+        repository: "Monorepo",
+        url: "https://github.com/Harold930/PI-POKEMON",
+      },
+    ],
+    image: "/images/projects/pokemon-web.webp",
   },
   {
     id: 5,
     name: "Flutter Pokémon App",
-    description: "A simple mobile application built with Flutter that consumes a public API to display Pokémon data. Users can also create new Pokémon entries (stored temporarily in memory).",
-    url: undefined,
-    technologies: [
-      "Flutter",
-      "Dart"
+    description:
+      "A simple mobile application built with Flutter that consumes a public API to display Pokémon data.",
+    technologies: ["Flutter", "Dart"],
+    github: [
+      {
+        repository: "Monorepo",
+        url: "https://github.com/HaroldR23/pokemon-flutter",
+      },
     ],
-    github: [{url: "https://github.com/HaroldR23/pokemon-flutter", repository: "Monorepo"}],
+    image: "/images/projects/pokemon-flutter.webp",
   },
-]
+];
+
 
 export const NOTES_ENG: Note[] = [
   {
