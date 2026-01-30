@@ -1,5 +1,6 @@
 /* eslint-disable max-len */
 
+import { Experience } from "@/app/models/experiences";
 import { Note } from "@/app/models/notes";
 import { Project } from "@/app/models/projects";
 
@@ -252,5 +253,41 @@ export const NOTES_SPA: Note[] = [
     id: 2,
     title: "Conceptos básicos de Cloud Computing para desarrolladores en 2026",
     url: "https://docs.google.com/document/d/1YTs9PuWAUx-nAm7FNrfmUCE12pwibmWZ9PQhEduWL1w/edit?usp=sharing",
+  }
+];
+
+
+export const LIST_EXPERIENCES_SPA: Experience[] = [
+  {
+    id: 1,
+    role: 'Desarrollador Web Full Stack',
+    company: 'Freelance',
+    period: '2025 - Presente',
+    achievements: [
+      'Diseñé y desarrollé una tienda online y catálogo de productos totalmente personalizable para una pastelería artesanal premium (Dulce Paladar), mejorando la visibilidad de productos y la interacción con clientes',
+      'Desarrollé un sitio web profesional para una empresa de servicios de limpieza (MerySu Sparkle Cleaning), incorporando flujos de captación de clientes y presentación clara de servicios para mejorar la adquisición de leads',
+      'Creé un sitio de portafolio interactivo para una marca de diseño de interiores y visualización 3D (Valentina Portfolio), destacando proyectos, servicios y llamados a la acción con diseño responsive',
+      'Implementé optimizaciones de rendimiento, diseño responsive y compatibilidad cross-browser en múltiples proyectos, mejorando la experiencia de usuario en dispositivos móviles',
+      'Colaboré directamente con clientes para definir requerimientos, refinar la experiencia de usuario y entregar soluciones alineadas con los objetivos del negocio'
+    ],
+    tech: ['React', 'Next.js', 'TypeScript', 'Node.js', 'CSS', 'Diseño Responsive', 'Deploy (Vercel / Netlify)'],
+  },
+  {
+    id: 2,
+    role: 'Desarrollador Web Full Stack',
+    company: 'Ioet inc.',
+    period: '2022 - 2025',
+    achievements: [
+      'Desarrollé endpoints de API para permitir integraciones eficientes y seguras con servicios de terceros.',
+      'Integré servicios externos relacionados con inteligencia artificial y redes sociales para automatizar flujos de marketing.',
+      'Construí servicios internos adaptados a requerimientos específicos de clientes, optimizando el rendimiento del backend.',
+      'Creé nuevas interfaces de usuario y flujos interactivos, mejorando la experiencia del usuario a partir de feedback real.',
+      'Escribí tests unitarios en múltiples capas del sistema para garantizar la calidad y mantenibilidad del código.',
+      'Diseñé e implementé APIs escalables desde cero, siguiendo principios de arquitectura limpia.',
+      'Desplegué aplicaciones backend y frontend utilizando prácticas de infraestructura como código para asegurar consistencia entre entornos.',
+      'Apliqué arquitectura hexagonal para promover modularidad, escalabilidad e independencia tecnológica.',
+      'Mejoré la experiencia de usuario mediante el diseño de nuevos flujos de UI y el aumento de la interactividad en el producto.'
+    ],
+    tech: ['JavaScript', 'TypeScript', 'React', 'Python', 'FastAPI', 'Node.js', 'PostgreSQL', 'Git', 'REST APIs', 'CI/CD', 'AWS', 'Docker', 'SQLAlchemy'],
   }
 ];
