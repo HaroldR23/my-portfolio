@@ -16,6 +16,8 @@ import {
   FEATURED_WORK_ENG, 
   INTRODUCTION_MY_SELF_ENG, 
   INTRODUCTION_MY_SELF_ENG_SUB_HEADER, 
+  LIST_EXPERIENCES_ENG, 
+  LIST_SERVICES_ENG, 
   MOBILE_TECH_STACK_TEXT_ENG, 
   NOTES_ENG, 
   OPEN_TO_OPPORTUNITIES_ENG, 
@@ -45,6 +47,8 @@ import {
   FEATURED_WORK_SPA, 
   INTRODUCTION_MY_SELF_SPA, 
   INTRODUCTION_MY_SELF_SPA_SUB_HEADER, 
+  LIST_EXPERIENCES_SPA, 
+  LIST_SERVICES_SPA, 
   MOBILE_TECH_STACK_TEXT_SPA, 
   NOTES_SPA, 
   OPEN_TO_OPPORTUNITIES_SPA, 
@@ -60,6 +64,8 @@ import {
 import { Note } from "@/app/models/notes";
 import { Languages } from "../enums/languages";
 import { LanguageOption } from "@/app/models/languageOption";
+import { Experience } from "@/app/models/experiences";
+import { Service } from "@/app/models/services";
 
 export const DEVELOPER_NAME: string = "Harold Rodriguez";
 export const COPYRIGHT_LOGO_URL = "https://i.imgur.com/qZAXWKR.png";
@@ -295,3 +301,42 @@ export const navItems = (language : Languages) => ([
   { label: 'Blog', href: '#blog' },
   { label: CONTACT_SECTION[language], href: '#contactMe' },
 ]);
+
+export const LIST_EXPERIENCES: Record<string, Experience[]> = {
+  english: LIST_EXPERIENCES_ENG,
+  spanish: LIST_EXPERIENCES_SPA
+}
+
+export const EXPERIENCE_TITLE: Record<string, string> = {
+  english: "Experience",
+  spanish: "Experiencia"
+}
+export const EXPERIENCE_SUB_TITLE: Record<string, string> = {
+  english: "Building impactful solutions and growing continuously",
+  spanish: "Construyendo soluciones de calidad y creciendo continuamente"
+}
+
+export const EXPERIENCE_HEADER: Record<string, string> = {
+  english: "Professional Journey",
+  spanish: "Trayectoria profesional"
+}
+
+export const LIST_SERVICES: Record<string, Service[]> = {
+  english: LIST_SERVICES_ENG,
+  spanish: LIST_SERVICES_SPA
+}
+
+export const SERVICES_TITLE: Record<string, string> = {
+  english: "What I Can Do For You",
+  spanish: "Lo que puedo hacer por ti"
+}
+
+export const SERVICES_SUBTITLE: Record<string, string> = {
+  english: "Comprehensive development services to bring your ideas to life",
+  spanish: "Servicios de desarrollo integrales para dar vida a tus ideas"
+}
+
+export const SERVICE_CTA_TEXT: Record<string, string> = {
+  english: "Get Started",
+  spanish: "Empezar"
+}

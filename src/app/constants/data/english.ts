@@ -1,6 +1,9 @@
 /* eslint-disable max-len */
 import { Project } from "@/app/models/projects";
 import { Note } from "@/app/models/notes";
+import { Experience } from "@/app/models/experiences";
+import { Bot, Cloud, Code, Server } from "lucide-react";
+import { Service } from "@/app/models/services";
 
 
 export const COPYRIGHT_TEXT_CONTENT_ENG = "Designed and created by Harold Rodriguez © 2025 || All Rights Reserved";
@@ -251,4 +254,67 @@ export const NOTES_ENG: Note[] = [
     title: "Basic Cloud Computing Concepts for Developers in 2026",
     url: "https://docs.google.com/document/d/1YTs9PuWAUx-nAm7FNrfmUCE12pwibmWZ9PQhEduWL1w/edit?usp=sharing",
   }
+];
+
+
+export const LIST_EXPERIENCES_ENG: Experience[] = [
+  {
+    id: 1,
+    role: 'Full Stack Developer',
+    company: 'Freelance',
+    period: '2025 - Present',
+    achievements: [
+      'Built and deployed a fully customizable online storefront and catalog for a premium artisanal bakery site (Dulce Paladar), enhancing product discovery and seasonal sales engagement', 
+      'I developed a professional website for a cleaning services company (MerySu Sparkle Cleaning), incorporating customer acquisition flows and clear presentation of services to improve lead generation.',
+      'Created an interactive portfolio site for an interior design & visualization brand (VA RO DESIGN) showcasing projects, services, and 3D visualizations with responsive design and clear CTA flows',
+      'Integrated performance optimizations, responsive layouts, and cross-browser compatibility across multiple client sites, resulting in improved user engagement and mobile accessibility',
+      'Collaborated directly with clients to refine requirements, deliver tailored UI/UX, and ensure on-time rollouts aligned with business goals'
+    ],
+    tech: ['TypeScript', 'JavaScript', 'React', 'Next.js', 'TypeScript', 'Node.js', 'CSS', 'Python', 'Responsive Design', 'Deployment (Vercel / AWS)'],
+  },
+  {
+    id: 2,
+    role: 'Full Stack Software Developer',
+    company: 'Ioet inc.',
+    period: '2022 - 2025',
+    achievements: [
+      'Developed API endpoints to enable efficient and secure integrations with third-party services.',
+      'Integrated external services related to artificial intelligence and social media to automate marketing workflows.',
+      'Built internal services tailored to specific client requirements, optimizing backend performance.',
+      'Created new user interfaces and interactive flows, enhancing the user experience based on real feedback.',
+      'Wrote unit tests across multiple layers of the system to ensure code quality and maintainability',
+      'Designed and implemented scalable APIs from scratch, following clean architecture principles.',
+      'Deployed backend and frontend applications using infrastructure-as-code practices for environment consistency.',
+      'Applied hexagonal architecture to promote modularity, scalability, and technology independence.',
+      'Improved user experience by designing new UI flows and enhancing interactivity across the product.'
+    ],
+    tech: ['JavaScript', 'TypeScript', 'React', 'Python', 'FastAPI', 'Node.js', 'PostgreSQL', 'Git', 'REST APIs', 'CI/CD', 'AWS', 'Docker', 'SQLAlchemy'],
+  },
+];
+
+export const LIST_SERVICES_ENG: Service[] = [
+  {
+    icon: Code,
+    title: 'Web Development',
+    description: 'Modern, responsive web applications built with React, Next.js, and TypeScript. Clean code, exceptional UX, and pixel-perfect designs.',
+    benefits: ['Responsive Design', 'SEO Optimized', 'Fast Performance', 'Modern Stack'],
+  },
+  {
+    icon: Server,
+    title: 'API & Backend Development',
+    description: 'Scalable REST APIs and backend systems using Python, FastAPI, and Node.js. Secure, efficient, and production-ready.',
+    benefits: ['RESTful APIs', 'Database Design', 'Authentication', 'Scalable Architecture'],
+  },
+  {
+    icon: Cloud,
+    title: 'Cloud & Automation',
+    description: 'Cloud infrastructure setup and deployment automation on AWS. CI/CD pipelines, serverless architecture, and DevOps best practices.',
+    benefits: ['AWS Deployment', 'CI/CD Pipelines', 'Serverless', 'Infrastructure as Code'],
+  },
+  {
+    icon: Bot,
+    title: 'AI-Powered Solutions',
+    description: 'Integrate AI capabilities into your applications using OpenAI, LangChain, and vector databases for intelligent features.',
+    benefits: ['ChatGPT Integration', 'Smart Automation', 'Data Analysis', 'Custom AI Tools'],
+  },
 ];

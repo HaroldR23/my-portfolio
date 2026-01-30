@@ -1,7 +1,10 @@
 /* eslint-disable max-len */
 
+import { Experience } from "@/app/models/experiences";
 import { Note } from "@/app/models/notes";
 import { Project } from "@/app/models/projects";
+import { Service } from "@/app/models/services";
+import { Bot, Cloud, Code, Server } from "lucide-react";
 
 export const COPYRIGHT_TEXT_CONTENT_SPA = "Diseñado y creado por Harold Rodriguez © 2025 || Todos los derechos reservados";
 export const ABOUT_ME_TEXT_SPA = "Construyo aplicaciones robustas, desarrollo APIs escalables y disfruto trabajando tanto en frontend como en backend. Me adapto rápidamente, prospero en entornos de equipo y sin miedo a los desafíos. Ya sea aprendiendo un nuevo framework o mejorando un producto, estoy comprometido con el crecimiento continuo y con entregar calidad mediante un código limpio y eficiente.";
@@ -253,4 +256,67 @@ export const NOTES_SPA: Note[] = [
     title: "Conceptos básicos de Cloud Computing para desarrolladores en 2026",
     url: "https://docs.google.com/document/d/1YTs9PuWAUx-nAm7FNrfmUCE12pwibmWZ9PQhEduWL1w/edit?usp=sharing",
   }
+];
+
+
+export const LIST_EXPERIENCES_SPA: Experience[] = [
+  {
+    id: 1,
+    role: 'Desarrollador Web Full Stack',
+    company: 'Freelance',
+    period: '2025 - Presente',
+    achievements: [
+      'Diseñé y desarrollé una tienda online y catálogo de productos totalmente personalizable para una pastelería artesanal premium (Dulce Paladar), mejorando la visibilidad de productos y la interacción con clientes',
+      'Desarrollé un sitio web profesional para una empresa de servicios de limpieza (MerySu Sparkle Cleaning), incorporando flujos de captación de clientes y presentación clara de servicios para mejorar la adquisición de leads',
+      'Creé un sitio de portafolio interactivo para una marca de diseño de interiores y visualización 3D (Valentina Portfolio), destacando proyectos, servicios y llamados a la acción con diseño responsive',
+      'Implementé optimizaciones de rendimiento, diseño responsive y compatibilidad cross-browser en múltiples proyectos, mejorando la experiencia de usuario en dispositivos móviles',
+      'Colaboré directamente con clientes para definir requerimientos, refinar la experiencia de usuario y entregar soluciones alineadas con los objetivos del negocio'
+    ],
+    tech: ['React', 'Next.js', 'TypeScript', 'Node.js', 'CSS', 'Diseño Responsive', 'Deploy (Vercel / Netlify)'],
+  },
+  {
+    id: 2,
+    role: 'Desarrollador Web Full Stack',
+    company: 'Ioet inc.',
+    period: '2022 - 2025',
+    achievements: [
+      'Desarrollé endpoints de API para permitir integraciones eficientes y seguras con servicios de terceros.',
+      'Integré servicios externos relacionados con inteligencia artificial y redes sociales para automatizar flujos de marketing.',
+      'Construí servicios internos adaptados a requerimientos específicos de clientes, optimizando el rendimiento del backend.',
+      'Creé nuevas interfaces de usuario y flujos interactivos, mejorando la experiencia del usuario a partir de feedback real.',
+      'Escribí tests unitarios en múltiples capas del sistema para garantizar la calidad y mantenibilidad del código.',
+      'Diseñé e implementé APIs escalables desde cero, siguiendo principios de arquitectura limpia.',
+      'Desplegué aplicaciones backend y frontend utilizando prácticas de infraestructura como código para asegurar consistencia entre entornos.',
+      'Apliqué arquitectura hexagonal para promover modularidad, escalabilidad e independencia tecnológica.',
+      'Mejoré la experiencia de usuario mediante el diseño de nuevos flujos de UI y el aumento de la interactividad en el producto.'
+    ],
+    tech: ['JavaScript', 'TypeScript', 'React', 'Python', 'FastAPI', 'Node.js', 'PostgreSQL', 'Git', 'REST APIs', 'CI/CD', 'AWS', 'Docker', 'SQLAlchemy'],
+  }
+];
+
+export const LIST_SERVICES_SPA: Service[] = [
+  {
+    icon: Code,
+    title: 'Desarrollo Web',
+    description: 'Aplicaciones web modernas y responsivas construidas con React, Next.js y TypeScript. Código limpio, excelente experiencia de usuario y diseños pixel-perfect.',
+    benefits: ['Diseño Responsive', 'Optimizado para SEO', 'Alto Rendimiento', 'Stack Moderno'],
+  },
+  {
+    icon: Server,
+    title: 'Desarrollo de APIs y Backend',
+    description: 'APIs REST escalables y sistemas backend desarrollados con Python, FastAPI y Node.js. Seguros, eficientes y listos para producción.',
+    benefits: ['APIs REST', 'Diseño de Bases de Datos', 'Autenticación', 'Arquitectura Escalable'],
+  },
+  {
+    icon: Cloud,
+    title: 'Cloud y Automatización',
+    description: 'Configuración de infraestructura en la nube y automatización de despliegues en AWS. Pipelines de CI/CD, arquitectura serverless y buenas prácticas DevOps.',
+    benefits: ['Despliegue en AWS', 'Pipelines CI/CD', 'Serverless', 'Infraestructura como Código'],
+  },
+  {
+    icon: Bot,
+    title: 'Soluciones con IA',
+    description: 'Integración de capacidades de inteligencia artificial en tus aplicaciones utilizando OpenAI, LangChain y bases de datos vectoriales para funcionalidades inteligentes.',
+    benefits: ['Integración con ChatGPT', 'Automatización Inteligente', 'Análisis de Datos', 'Herramientas de IA Personalizadas'],
+  },
 ];
