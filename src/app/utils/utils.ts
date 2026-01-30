@@ -2,7 +2,7 @@ import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from "tailwind-merge";
 import { PROJECT_CARD_COLORS } from '../constants/styles/projectsSectionStyles';
 
-function cn(...inputs: ClassValue[]) {
+export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
@@ -34,3 +34,4 @@ export const getLanguageSelectorButtonStyle = (currentLanguage: string, language
     ? 'bg-blue-50 text-blue-600' 
     : 'hover:bg-gray-100 text-gray-700'
 }`
+

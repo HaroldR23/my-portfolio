@@ -10,4 +10,8 @@ export interface Project {
     url?: string;
     technologies: string[];
     github: Repository[];
+    image: string;
+    problem?: string;
+    solution?: string;
 }
+

@@ -11,15 +11,23 @@ import {
   CV_DOWNLOAD_URL_ENG, 
   DATA_BASES_TEXT_ENG, 
   DEVOPS_TOOLS_TEXT_ENG, 
+  FEATURED_PROJECTS_ENG, 
+  FEATURED_PROJECTS_SUB_ENG, 
+  FEATURED_WORK_ENG, 
   INTRODUCTION_MY_SELF_ENG, 
   INTRODUCTION_MY_SELF_ENG_SUB_HEADER, 
+  LIST_EXPERIENCES_ENG, 
+  LIST_SERVICES_ENG, 
   MOBILE_TECH_STACK_TEXT_ENG, 
   NOTES_ENG, 
+  OPEN_TO_OPPORTUNITIES_ENG, 
+  OTHER_PROJECTS_ENG, 
   PROJECTS_ENG, 
   PROJECTS_LIST_ENG, 
   READ_MORE_ENG,
   REPOSITORY_ENG,
   TECH_STACK_ENG,
+  TECH_STACK_SUBTITLE_ENG,
   VIEW_PROJECT_ENG
 } from "./english";
 import { 
@@ -34,20 +42,30 @@ import {
   CV_DOWNLOAD_URL_SPA, 
   DATA_BASES_TEXT_SPA, 
   DEVOPS_TOOLS_TEXT_SPA, 
+  FEATURED_PROJECTS_SPA, 
+  FEATURED_PROJECTS_SUB_SPA, 
+  FEATURED_WORK_SPA, 
   INTRODUCTION_MY_SELF_SPA, 
   INTRODUCTION_MY_SELF_SPA_SUB_HEADER, 
+  LIST_EXPERIENCES_SPA, 
+  LIST_SERVICES_SPA, 
   MOBILE_TECH_STACK_TEXT_SPA, 
   NOTES_SPA, 
+  OPEN_TO_OPPORTUNITIES_SPA, 
+  OTHER_PROJECTS_SPA, 
   PROJECTS_LIST_SPA, 
   PROJECTS_SPA, 
   READ_MORE_SPA,
   REPOSITORY_SPA,
   TECH_STACK_SPA,
+  TECH_STACK_SUBTITLE_SPA,
   VIEW_PROJECT_SPA
 } from "./spanish";
 import { Note } from "@/app/models/notes";
 import { Languages } from "../enums/languages";
 import { LanguageOption } from "@/app/models/languageOption";
+import { Experience } from "@/app/models/experiences";
+import { Service } from "@/app/models/services";
 
 export const DEVELOPER_NAME: string = "Harold Rodriguez";
 export const COPYRIGHT_LOGO_URL = "https://i.imgur.com/qZAXWKR.png";
@@ -146,6 +164,10 @@ export const TECH_STACK: Record<string, string> = {
   english: TECH_STACK_ENG,
   spanish: TECH_STACK_SPA
 };
+export const TECH_STACK_SUBTITLE: Record<string, string> = {
+  english: TECH_STACK_SUBTITLE_ENG,
+  spanish: TECH_STACK_SUBTITLE_SPA
+};  
 
 export const COPYRIGHT_TEXT_CONTENT: Record<string, string> = {
   english: COPYRIGHT_TEXT_CONTENT_ENG,
@@ -165,6 +187,11 @@ export const INTRODUCTION_MY_SELF: Record<string, string> = {
 export const INTRODUCTION_MY_SELF_SUB_HEADER: Record<string, string> = {
   english: INTRODUCTION_MY_SELF_ENG_SUB_HEADER,
   spanish: INTRODUCTION_MY_SELF_SPA_SUB_HEADER
+}
+
+export const OPEN_TO_OPPORTUNITIES: Record<string, string> = {
+  english: OPEN_TO_OPPORTUNITIES_ENG,
+  spanish: OPEN_TO_OPPORTUNITIES_SPA
 }
 
 export const PROJECTS_SECTION_TITLE: Record<string, string> = {
@@ -217,6 +244,40 @@ export const PROJECTS: Record<string, string> = {
   spanish: PROJECTS_SPA
 }
 
+export const FEATURED_PROJECTS: Record<string, string> = {
+  english: FEATURED_PROJECTS_ENG,
+  spanish: FEATURED_PROJECTS_SPA
+}
+
+export const FEATURED_PROJECTS_SUB: Record<string, string> = {
+  english: FEATURED_PROJECTS_SUB_ENG,
+  spanish: FEATURED_PROJECTS_SUB_SPA
+}
+
+export const FEATURED_WORK: Record<string, string> = {
+  english: FEATURED_WORK_ENG,
+  spanish: FEATURED_WORK_SPA
+}
+
+export const PRBLOEM_TITLE: Record<string, string> = {
+  english: "Problem",
+  spanish: "Problema"
+}
+
+export const SOLUTION_TITLE: Record<string, string> = {
+  english: "Solution",
+  spanish: "Solución"
+}
+export const OTHER_PROJECTS: Record<string, string> = {
+  english: OTHER_PROJECTS_ENG,
+  spanish: OTHER_PROJECTS_SPA
+}
+
+export const OTHER_PROJECTS_SUB: Record<string, string> = {
+  english: "Additional work and projects to practice new technologies",
+  spanish: "Trabajos y proyectos adicionales para practicar nuevas tecnologías"
+}
+
 export const CONTACT_SECTION: Record<string, string> = {
   english: CONTACT_SECTION_ENG,
   spanish: CONTACT_SECTION_SPA
@@ -230,4 +291,52 @@ export const VIEW_PROJECT: Record<string, string> = {
 export const REPOSITORY: Record<string, string> = {
   english: REPOSITORY_ENG,
   spanish: REPOSITORY_SPA
+}
+
+export const navItems = (language : Languages) => ([
+  { label: 'Info', href: '#' },
+  { label: PROJECTS[language], href: '#projects' },
+  { label: 'Experience', href: '#experience' },
+  { label: 'Services', href: '#services' },
+  { label: 'Blog', href: '#blog' },
+  { label: CONTACT_SECTION[language], href: '#contactMe' },
+]);
+
+export const LIST_EXPERIENCES: Record<string, Experience[]> = {
+  english: LIST_EXPERIENCES_ENG,
+  spanish: LIST_EXPERIENCES_SPA
+}
+
+export const EXPERIENCE_TITLE: Record<string, string> = {
+  english: "Experience",
+  spanish: "Experiencia"
+}
+export const EXPERIENCE_SUB_TITLE: Record<string, string> = {
+  english: "Building impactful solutions and growing continuously",
+  spanish: "Construyendo soluciones de calidad y creciendo continuamente"
+}
+
+export const EXPERIENCE_HEADER: Record<string, string> = {
+  english: "Professional Journey",
+  spanish: "Trayectoria profesional"
+}
+
+export const LIST_SERVICES: Record<string, Service[]> = {
+  english: LIST_SERVICES_ENG,
+  spanish: LIST_SERVICES_SPA
+}
+
+export const SERVICES_TITLE: Record<string, string> = {
+  english: "What I Can Do For You",
+  spanish: "Lo que puedo hacer por ti"
+}
+
+export const SERVICES_SUBTITLE: Record<string, string> = {
+  english: "Comprehensive development services to bring your ideas to life",
+  spanish: "Servicios de desarrollo integrales para dar vida a tus ideas"
+}
+
+export const SERVICE_CTA_TEXT: Record<string, string> = {
+  english: "Get Started",
+  spanish: "Empezar"
 }
