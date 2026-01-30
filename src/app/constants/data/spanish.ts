@@ -3,6 +3,8 @@
 import { Experience } from "@/app/models/experiences";
 import { Note } from "@/app/models/notes";
 import { Project } from "@/app/models/projects";
+import { Service } from "@/app/models/services";
+import { Bot, Cloud, Code, Server } from "lucide-react";
 
 export const COPYRIGHT_TEXT_CONTENT_SPA = "Diseñado y creado por Harold Rodriguez © 2025 || Todos los derechos reservados";
 export const ABOUT_ME_TEXT_SPA = "Construyo aplicaciones robustas, desarrollo APIs escalables y disfruto trabajando tanto en frontend como en backend. Me adapto rápidamente, prospero en entornos de equipo y sin miedo a los desafíos. Ya sea aprendiendo un nuevo framework o mejorando un producto, estoy comprometido con el crecimiento continuo y con entregar calidad mediante un código limpio y eficiente.";
@@ -290,4 +292,31 @@ export const LIST_EXPERIENCES_SPA: Experience[] = [
     ],
     tech: ['JavaScript', 'TypeScript', 'React', 'Python', 'FastAPI', 'Node.js', 'PostgreSQL', 'Git', 'REST APIs', 'CI/CD', 'AWS', 'Docker', 'SQLAlchemy'],
   }
+];
+
+export const LIST_SERVICES_SPA: Service[] = [
+  {
+    icon: Code,
+    title: 'Desarrollo Web',
+    description: 'Aplicaciones web modernas y responsivas construidas con React, Next.js y TypeScript. Código limpio, excelente experiencia de usuario y diseños pixel-perfect.',
+    benefits: ['Diseño Responsive', 'Optimizado para SEO', 'Alto Rendimiento', 'Stack Moderno'],
+  },
+  {
+    icon: Server,
+    title: 'Desarrollo de APIs y Backend',
+    description: 'APIs REST escalables y sistemas backend desarrollados con Python, FastAPI y Node.js. Seguros, eficientes y listos para producción.',
+    benefits: ['APIs REST', 'Diseño de Bases de Datos', 'Autenticación', 'Arquitectura Escalable'],
+  },
+  {
+    icon: Cloud,
+    title: 'Cloud y Automatización',
+    description: 'Configuración de infraestructura en la nube y automatización de despliegues en AWS. Pipelines de CI/CD, arquitectura serverless y buenas prácticas DevOps.',
+    benefits: ['Despliegue en AWS', 'Pipelines CI/CD', 'Serverless', 'Infraestructura como Código'],
+  },
+  {
+    icon: Bot,
+    title: 'Soluciones con IA',
+    description: 'Integración de capacidades de inteligencia artificial en tus aplicaciones utilizando OpenAI, LangChain y bases de datos vectoriales para funcionalidades inteligentes.',
+    benefits: ['Integración con ChatGPT', 'Automatización Inteligente', 'Análisis de Datos', 'Herramientas de IA Personalizadas'],
+  },
 ];

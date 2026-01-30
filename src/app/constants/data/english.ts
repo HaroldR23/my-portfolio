@@ -2,6 +2,8 @@
 import { Project } from "@/app/models/projects";
 import { Note } from "@/app/models/notes";
 import { Experience } from "@/app/models/experiences";
+import { Bot, Cloud, Code, Server } from "lucide-react";
+import { Service } from "@/app/models/services";
 
 
 export const COPYRIGHT_TEXT_CONTENT_ENG = "Designed and created by Harold Rodriguez © 2025 || All Rights Reserved";
@@ -287,5 +289,32 @@ export const LIST_EXPERIENCES_ENG: Experience[] = [
       'Improved user experience by designing new UI flows and enhancing interactivity across the product.'
     ],
     tech: ['JavaScript', 'TypeScript', 'React', 'Python', 'FastAPI', 'Node.js', 'PostgreSQL', 'Git', 'REST APIs', 'CI/CD', 'AWS', 'Docker', 'SQLAlchemy'],
+  },
+];
+
+export const LIST_SERVICES_ENG: Service[] = [
+  {
+    icon: Code,
+    title: 'Web Development',
+    description: 'Modern, responsive web applications built with React, Next.js, and TypeScript. Clean code, exceptional UX, and pixel-perfect designs.',
+    benefits: ['Responsive Design', 'SEO Optimized', 'Fast Performance', 'Modern Stack'],
+  },
+  {
+    icon: Server,
+    title: 'API & Backend Development',
+    description: 'Scalable REST APIs and backend systems using Python, FastAPI, and Node.js. Secure, efficient, and production-ready.',
+    benefits: ['RESTful APIs', 'Database Design', 'Authentication', 'Scalable Architecture'],
+  },
+  {
+    icon: Cloud,
+    title: 'Cloud & Automation',
+    description: 'Cloud infrastructure setup and deployment automation on AWS. CI/CD pipelines, serverless architecture, and DevOps best practices.',
+    benefits: ['AWS Deployment', 'CI/CD Pipelines', 'Serverless', 'Infrastructure as Code'],
+  },
+  {
+    icon: Bot,
+    title: 'AI-Powered Solutions',
+    description: 'Integrate AI capabilities into your applications using OpenAI, LangChain, and vector databases for intelligent features.',
+    benefits: ['ChatGPT Integration', 'Smart Automation', 'Data Analysis', 'Custom AI Tools'],
   },
 ];
