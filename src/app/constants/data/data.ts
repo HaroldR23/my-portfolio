@@ -16,6 +16,7 @@ import {
   FEATURED_WORK_ENG, 
   INTRODUCTION_MY_SELF_ENG, 
   INTRODUCTION_MY_SELF_ENG_SUB_HEADER, 
+  LIST_BLOGS_ENG, 
   LIST_EXPERIENCES_ENG, 
   LIST_SERVICES_ENG, 
   MOBILE_TECH_STACK_TEXT_ENG, 
@@ -47,6 +48,7 @@ import {
   FEATURED_WORK_SPA, 
   INTRODUCTION_MY_SELF_SPA, 
   INTRODUCTION_MY_SELF_SPA_SUB_HEADER, 
+  LIST_BLOGS_SPA, 
   LIST_EXPERIENCES_SPA, 
   LIST_SERVICES_SPA, 
   MOBILE_TECH_STACK_TEXT_SPA, 
@@ -66,6 +68,7 @@ import { Languages } from "../enums/languages";
 import { LanguageOption } from "@/app/models/languageOption";
 import { Experience } from "@/app/models/experiences";
 import { Service } from "@/app/models/services";
+import { Blog } from "@/app/models/blog";
 
 export const DEVELOPER_NAME: string = "Harold Rodriguez";
 export const COPYRIGHT_LOGO_URL = "https://i.imgur.com/qZAXWKR.png";
@@ -339,4 +342,19 @@ export const SERVICES_SUBTITLE: Record<string, string> = {
 export const SERVICE_CTA_TEXT: Record<string, string> = {
   english: "Get Started",
   spanish: "Empezar"
+}
+
+export const LIST_BLOGS: Record<string, Blog[]> = {
+  english: LIST_BLOGS_ENG,
+  spanish: LIST_BLOGS_SPA
+}
+
+export const BLOG_TITLE: Record<string, string> = {
+  english: "Latest Insights",
+  spanish: "Últimas ideas"
+}
+
+export const BLOG_SUBTITLE: Record<string, string> = {
+  english: "Sharing knowledge and experiences from the field",
+  spanish: "Compartiendo conocimientos y experiencias del campo"
 }
