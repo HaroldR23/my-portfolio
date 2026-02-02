@@ -1,5 +1,6 @@
 /* eslint-disable max-len */
 
+import { Blog } from "@/app/models/blog";
 import { Experience } from "@/app/models/experiences";
 import { Note } from "@/app/models/notes";
 import { Project } from "@/app/models/projects";
@@ -318,5 +319,28 @@ export const LIST_SERVICES_SPA: Service[] = [
     title: 'Soluciones con IA',
     description: 'Integración de capacidades de inteligencia artificial en tus aplicaciones utilizando OpenAI, LangChain y bases de datos vectoriales para funcionalidades inteligentes.',
     benefits: ['Integración con ChatGPT', 'Automatización Inteligente', 'Análisis de Datos', 'Herramientas de IA Personalizadas'],
+  },
+];
+
+export const LIST_BLOGS_SPA: Blog[] = [
+  {
+    title: 'Cómo buscar trabajo como desarrollador en 2025',
+    excerpt:
+      'Una guía práctica basada en experiencia real para desarrolladores con experiencia que buscan trabajo en un mercado más competitivo. Incluye consejos sobre cómo postularse mejor, optimizar el CV, construir un portafolio sólido y mantenerse actualizado.',
+    category: 'Career',
+    date: 'Jul 15, 2025',
+    readTime: '6 min lectura',
+    image: '/how_to_find_a_job.png',
+    url: 'https://docs.google.com/document/d/1_aqUHsoq12ySvow0ToMFtEWGiK__KQ6mdlKk6NFoxLs/edit?usp=sharing'
+  },
+  {
+    title: 'Fundamentos de AWS: servicios clave y arquitectura en la nube',
+    excerpt:
+      'Introducción completa a los principales servicios de AWS y conceptos de cloud computing. Cubre infraestructura global, EC2, S3, Lambda, bases de datos, redes, seguridad, precios y arquitecturas modernas orientadas a microservicios.',
+    category: 'Cloud',
+    date: 'Dec 20, 2025',
+    readTime: '75 min lectura',
+    image: '/aws.png',
+    url: 'https://docs.google.com/document/d/1YTs9PuWAUx-nAm7FNrfmUCE12pwibmWZ9PQhEduWL1w/edit?usp=sharing'
   },
 ];

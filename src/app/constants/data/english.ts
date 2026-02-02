@@ -4,6 +4,7 @@ import { Note } from "@/app/models/notes";
 import { Experience } from "@/app/models/experiences";
 import { Bot, Cloud, Code, Server } from "lucide-react";
 import { Service } from "@/app/models/services";
+import { Blog } from "@/app/models/blog";
 
 
 export const COPYRIGHT_TEXT_CONTENT_ENG = "Designed and created by Harold Rodriguez © 2025 || All Rights Reserved";
@@ -316,5 +317,29 @@ export const LIST_SERVICES_ENG: Service[] = [
     title: 'AI-Powered Solutions',
     description: 'Integrate AI capabilities into your applications using OpenAI, LangChain, and vector databases for intelligent features.',
     benefits: ['ChatGPT Integration', 'Smart Automation', 'Data Analysis', 'Custom AI Tools'],
+  },
+];
+
+
+export const LIST_BLOGS_ENG: Blog[] = [
+  {
+    title: 'How to Find a Developer Job in 2025',
+    excerpt:
+      'A practical, experience-based guide for developers navigating a more competitive job market. Covers how to apply strategically, build a strong CV, create an effective portfolio, and stay up to date with modern technologies.',
+    category: 'Career',
+    date: 'Jul 15, 2025',
+    readTime: '6 min read',
+    image: '/how_to_find_a_job.png',
+    url: 'https://docs.google.com/document/d/1_aqUHsoq12ySvow0ToMFtEWGiK__KQ6mdlKk6NFoxLs/edit?usp=sharing'
+  },
+  {
+    title: 'AWS Fundamentals: Core Services and Cloud Architecture',
+    excerpt:
+      'A comprehensive introduction to AWS and cloud computing concepts. Covers global infrastructure, EC2, S3, Lambda, databases, networking, security, pricing models, and modern cloud-native architectures.',
+    category: 'Cloud',
+    date: 'Dec 20, 2025',
+    readTime: '75 min read',
+    image: '/aws.png',
+    url: 'https://docs.google.com/document/d/1YTs9PuWAUx-nAm7FNrfmUCE12pwibmWZ9PQhEduWL1w/edit?usp=sharing'
   },
 ];
