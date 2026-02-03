@@ -12,7 +12,7 @@ const ServicesSection = () => {
   const { language } = usePreferencesContext();
 
   return (
-    <section className="py-20 px-4 relative overflow-hidden">
+    <section className="py-20 px-4 relative overflow-hidden" id="services">
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-blue-950/20 to-slate-950" />
       

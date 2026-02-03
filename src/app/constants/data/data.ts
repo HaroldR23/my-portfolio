@@ -173,7 +173,7 @@ export const TECH_STACK_SUBTITLE: Record<string, string> = {
   spanish: TECH_STACK_SUBTITLE_SPA
 };  
 
-export const COPYRIGHT_TEXT_CONTENT: Record<string, string> = {
+export const COPYRIGHT_TEXT_CONTENT: Record<string, string[]> = {
   english: COPYRIGHT_TEXT_CONTENT_ENG,
   spanish: COPYRIGHT_TEXT_CONTENT_SPA
 }
@@ -300,8 +300,8 @@ export const REPOSITORY: Record<string, string> = {
 export const navItems = (language : Languages) => ([
   { label: 'Info', href: '#' },
   { label: PROJECTS[language], href: '#projects' },
-  { label: 'Experience', href: '#experience' },
-  { label: 'Services', href: '#services' },
+  { label: EXPERIENCE_TITLE[language], href: '#experience' },
+  { label: SERVICES_TITLE_PLURAL[language], href: '#services' },
   { label: 'Blog', href: '#blog' },
   { label: CONTACT_SECTION[language], href: '#contactMe' },
 ]);
@@ -373,4 +373,24 @@ export const CONTACT_ME_WHATSAPP: Record<string, string> = {
 export const CONTACT_ME_BUTTON_TEXT: Record<string, string> = {
   english: "Start a Conversation",
   spanish: "Iniciar una conversación"
+}
+
+export const FOOTER_TITLE: Record<string, string> = {
+  english: "Software Developer passionate about building elegant, modern and scalable web applications.",
+  spanish: "Desarrollador de software apasionado por crear aplicaciones web elegantes, modernas y escalables."
+}
+
+export const LINKS_TITLE: Record<string, string> = {
+  english: "Quick Links",
+  spanish: "Enlaces Rápidos"
+}
+
+export const CONNECT_TITLE: Record<string, string> = {
+  english: "Connect",
+  spanish: "Conectar"
+}
+
+export const SERVICES_TITLE_PLURAL: Record<string, string> = {
+  english: "Services",
+  spanish: "Servicios"
 }

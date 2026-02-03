@@ -7,7 +7,7 @@ import { Project } from "@/app/models/projects";
 import { Service } from "@/app/models/services";
 import { Bot, Cloud, Code, Server } from "lucide-react";
 
-export const COPYRIGHT_TEXT_CONTENT_SPA = "Diseñado y creado por Harold Rodriguez © 2025 || Todos los derechos reservados";
+export const COPYRIGHT_TEXT_CONTENT_SPA = ["©", "Construido con", "y React", "Todos los derechos reservados"];
 export const ABOUT_ME_TEXT_SPA = "Construyo aplicaciones robustas, desarrollo APIs escalables y disfruto trabajando tanto en frontend como en backend. Me adapto rápidamente, prospero en entornos de equipo y sin miedo a los desafíos. Ya sea aprendiendo un nuevo framework o mejorando un producto, estoy comprometido con el crecimiento continuo y con entregar calidad mediante un código limpio y eficiente.";
 export const INTRODUCTION_MY_SELF_SPA = "Hola, soy Harold Rodriguez ";
 export const INTRODUCTION_MY_SELF_SPA_SUB_HEADER = "un apasionado Desarrollador de Software que disfruta convertir problemas complejos en soluciones elegantes.";

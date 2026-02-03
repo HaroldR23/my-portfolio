@@ -7,7 +7,7 @@ import { Service } from "@/app/models/services";
 import { Blog } from "@/app/models/blog";
 
 
-export const COPYRIGHT_TEXT_CONTENT_ENG = "Designed and created by Harold Rodriguez © 2025 || All Rights Reserved";
+export const COPYRIGHT_TEXT_CONTENT_ENG = ["©", "Built with", "and React", "All Rights Reserved"];
 export const ABOUT_ME_TEXT_ENG = "I build robust applications, develop scalable APIs, and love working on both frontend and backend systems. I adapt quickly, thrive in team environments, and never shy away from a challenge. Whether it's learning a new framework or improving a product, I'm committed to continuous growth and delivering quality through clean, efficient code."
 export const INTRODUCTION_MY_SELF_ENG = "Hi, I'm Harold Rodriguez ";
 export const INTRODUCTION_MY_SELF_ENG_SUB_HEADER = "a passionate Software Developer who enjoys turning complex problems into elegant solutions."
