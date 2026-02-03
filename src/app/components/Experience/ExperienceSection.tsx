@@ -10,7 +10,7 @@ import ExperienceCard from './ExperienceCard';
 const ExperienceSection = () => {
   const { language } = usePreferencesContext();
   return (
-    <section className="py-20 px-4 relative">
+    <section className="py-20 px-4 relative" id="experience">
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
