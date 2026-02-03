@@ -1,10 +1,11 @@
+/* eslint-disable max-len */
 import { Project } from "@/app/models/projects";
 import { 
   ABOUT_ME_TEXT_ENG, 
   AI_TOOLS_TEXT_ENG, 
   CONTACT_ME_SOCIAL_MEDIA_TEXT_ENG, 
   CONTACT_ME_TEXT_ENG, 
-  CONTACT_ME_TITLE_TEXT_ENG, 
+  CONTACT_ME_SUBTITLE_TEXT_ENG, 
   CONTACT_SECTION_ENG, 
   COPYRIGHT_TEXT_CONTENT_ENG, 
   CV_BUTTON_TEXT_ENG, 
@@ -36,7 +37,7 @@ import {
   AI_TOOLS_TEXT_SPA, 
   CONTACT_ME_SOCIAL_MEDIA_TEXT_SPA, 
   CONTACT_ME_TEXT_SPA, 
-  CONTACT_ME_TITLE_TEXT_SPA, 
+  CONTACT_ME_SUBTITLE_TEXT_SPA, 
   CONTACT_SECTION_SPA, 
   COPYRIGHT_TEXT_CONTENT_SPA, 
   CV_BUTTON_TEXT_SPA, 
@@ -227,9 +228,9 @@ export const READ_MORE: Record<string, string> = {
   spanish: READ_MORE_SPA
 }
 
-export const CONTACT_ME_TITLE_TEXT: Record<string, string> = {
-  english: CONTACT_ME_TITLE_TEXT_ENG,
-  spanish: CONTACT_ME_TITLE_TEXT_SPA
+export const CONTACT_ME_SUBTITLE_TEXT: Record<string, string> = {
+  english: CONTACT_ME_SUBTITLE_TEXT_ENG,
+  spanish: CONTACT_ME_SUBTITLE_TEXT_SPA
 }
 
 export const CONTACT_ME_TEXT_EMAIL: Record<string, string> = {
@@ -357,4 +358,19 @@ export const BLOG_TITLE: Record<string, string> = {
 export const BLOG_SUBTITLE: Record<string, string> = {
   english: "Sharing knowledge and experiences from the field",
   spanish: "Compartiendo conocimientos y experiencias del campo"
+}
+
+export const CONTACT_ME_GITHUB: Record<string, string> = {
+  english: "Follow me on GitHub",
+  spanish: "Sígueme en GitHub"
+}
+
+export const CONTACT_ME_WHATSAPP: Record<string, string> = {
+  english: "Hi! I found your portfolio and would like to get in touch. I’m currently looking for a Full Stack Developer and your profile caught my attention. Let’s connect and talk about potential opportunities.",
+  spanish: "¡Hola! Encontré tu portafolio y me gustaría ponerme en contacto. Actualmente estoy buscando un Desarrollador Full Stack y tu perfil llamó mi atención. Conectemos y hablemos sobre oportunidades potenciales."
+}
+
+export const CONTACT_ME_BUTTON_TEXT: Record<string, string> = {
+  english: "Start a Conversation",
+  spanish: "Iniciar una conversación"
 }
