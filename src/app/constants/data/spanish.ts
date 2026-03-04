@@ -36,7 +36,7 @@ export const OPEN_TO_OPPORTUNITIES_SPA = "Abierto a Oportunidades";
 
 export const PROJECTS_LIST_SPA: Project[] = [
   {
-    id: 7,
+    id: 1,
     name: "MerySu Sparkle Cleaning",
     description:
       "Sitio web profesional para un servicio de limpieza que muestra soluciones para hogares, oficinas y alquileres temporarios, con foco en productos ecológicos y reserva online sencilla.",
@@ -49,7 +49,6 @@ export const PROJECTS_LIST_SPA: Project[] = [
       "Next.js",
       "TypeScript",
       "Tailwind CSS",
-      "Framer Motion",
       "HTML",
       "CSS",
       "Python",
@@ -63,7 +62,71 @@ export const PROJECTS_LIST_SPA: Project[] = [
     image: "/merysu.png",
   },
   {
-    id: 8,
+    id: 2,
+    name: "Stiven Tatu Studio",
+    description:
+    "Sitio web frontend para un estudio creativo de tatuajes con diseño visualmente atractivo, mostrando estilos de tatuajes y contacto para clientes.",
+    problem:
+    "El proyecto necesitaba una web profesional para presentar claramente servicios de tatuajes, estilos visuales y facilitar el contacto con potenciales clientes.",
+    solution:
+    "Desarrollé una página responsiva con secciones organizadas que destacan los servicios, arte visual y formularios de contacto dirigidos a fomentar conversiones.",
+    technologies: [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "HTML",
+      "CSS",
+    ],
+    github: [],
+    url: "https://stiven-tatu-frontend.vercel.app/",
+    image: "/stiven_tatu.png",
+  },
+  {
+    id: 3,
+    name: "Semillas del Saber",
+    description:
+    "Frontend para un proyecto educativo que presenta propuestas de aprendizaje con contenido organizado y enfoque claro en materias y recursos.",
+    problem:
+    "Se necesitaba una plataforma web que comunique la oferta educativa y permita a los visitantes entender rápidamente los beneficios y temas disponibles.",
+    solution:
+    "Construí una interfaz limpia y estructurada con secciones que guían al usuario a través de la información educativa y las opciones de contacto o inscripción.",
+    technologies: [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "HTML",
+      "CSS",
+    ],
+    github: [],
+    url: "https://semillas-saber-frontend.vercel.app/",
+    image: "/semillas_del_saber.png",
+  },
+
+  {
+    id: 4,
+    name: "GlobalWay Forwarders",
+    description:
+    "Sitio web corporativo de presentación para una empresa de servicios de logística y transporte internacional con navegación y secciones claras.",
+    problem:
+    "La empresa requería una presencia digital profesional que detalle sus servicios de transporte y logística para atraer clientes corporativos.",
+    solution:
+    "Desarrollé una web estructurada con secciones dedicadas a cada servicio, testimonios y contacto para generar confianza y captar leads.",
+    technologies: [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "HTML",
+      "CSS",
+    ],
+    github: [],
+    url: "https://forwarder-website-rm.vercel.app/",
+    image: "/forwarder.png",
+  },
+  {
+    id: 5,
     name: "Dulce Paladar",
     description:
       "Sitio web en Next.js para una pastelería artesanal que ofrece tortas personalizadas, cupcakes, cookies y cajas de postres, transmitiendo una identidad cálida y apetecible.",
@@ -76,7 +139,6 @@ export const PROJECTS_LIST_SPA: Project[] = [
       "Next.js",
       "TypeScript",
       "Tailwind CSS",
-      "Framer Motion",
       "HTML",
       "CSS",
     ],
@@ -85,23 +147,25 @@ export const PROJECTS_LIST_SPA: Project[] = [
     image: "/dulce_paladar.png",
   },
   {
-    id: 9,
+    id: 6,
     name: "VA RO DESIGN – Portfolio de Diseño Interior",
     description: "Portafolio online de VA RO DESIGN, un estudio de diseño de interiores enfocado en crear espacios atemporales y funcionales combinando visión arquitectónica, estética y visualización 3D.",
     problem: "La diseñadora necesitaba una presencia digital profesional que mostrara sus servicios de diseño interior, decoración y visualizaciones 3D para captar clientes y destacar su estilo.",
     solution: "Se presenta un sitio web limpio y visual que organiza sus servicios, filosofía de diseño y ejemplos de obras seleccionadas para transmitir confianza y estilo a potenciales clientes.",
     technologies: [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
       "HTML",
       "CSS",
-      "JavaScript",
-      "Responsive Design"
     ],
     github: [],
     url: "https://valentina-portfolio-lovat.vercel.app/",
     image: "/valens_portfolio.png"
   },
   {
-    id: 6,
+    id: 7,
     name: "Asistente Virtual de Marketing",
     description:
       "Chatbot impulsado por inteligencia artificial que automatiza la creación de contenido para redes sociales utilizando conocimiento contextual.",
@@ -127,7 +191,7 @@ export const PROJECTS_LIST_SPA: Project[] = [
     image: "/images/projects/virtual-marketing-assistant.webp",
   },
   {
-    id: 1,
+    id: 8,
     name: "Portfolio",
     description:
       "Mi sitio web personal donde presento proyectos, habilidades y experiencia profesional. En constante evolución.",
@@ -150,7 +214,7 @@ export const PROJECTS_LIST_SPA: Project[] = [
     image: "/images/projects/portfolio.webp",
   },
   {
-    id: 2,
+    id: 9,
     name: "Sitio Web para Laboratorio Dental",
     description:
       "Plataforma web full stack para un laboratorio dental, con gestión de turnos, productos y panel de administración.",
@@ -187,7 +251,7 @@ export const PROJECTS_LIST_SPA: Project[] = [
     image: "/images/projects/dental-lab.webp",
   },
   {
-    id: 3,
+    id: 10,
     name: "E-commerce",
     description:
       "Proyecto académico grupal desarrollado como parte de una certificación Full Stack, con catálogo de productos, carrito y sistema de valoraciones.",
@@ -208,7 +272,7 @@ export const PROJECTS_LIST_SPA: Project[] = [
     image: "/images/projects/ecommerce.webp",
   },
   {
-    id: 4,
+    id: 11,
     name: "Aplicación Web Pokémon",
     description:
       "Aplicación web que consume una API externa de Pokémon y permite crear nuevas entidades (almacenadas en memoria).",
@@ -229,7 +293,7 @@ export const PROJECTS_LIST_SPA: Project[] = [
     image: "/images/projects/pokemon-web.webp",
   },
   {
-    id: 5,
+    id: 12,
     name: "Aplicación Pokémon en Flutter",
     description:
       "Aplicación móvil desarrollada con Flutter que consume una API pública para mostrar información de Pokémon.",
