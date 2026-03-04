@@ -29,7 +29,7 @@ const FeaturedProjects = ({ language }: { language: Languages }) => {
         </motion.div>
 
         <div className="space-y-12">
-          {PROJECTS_LIST[language].slice(0, 3).map((project, index) => (
+          {PROJECTS_LIST[language].slice(0, 5).map((project, index) => (
             <motion.div
               key={project.name}
               initial={{ opacity: 0, y: 30 }}

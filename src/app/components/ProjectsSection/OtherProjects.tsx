@@ -22,7 +22,7 @@ const OtherProjects = ({ language }: { language: Languages }) => {
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-6">
-          {PROJECTS_LIST[language].slice(4).map((project, index) => (
+          {PROJECTS_LIST[language].slice(5).map((project, index) => (
             <motion.div
               key={project.name}
               initial={{ opacity: 0, y: 20 }}

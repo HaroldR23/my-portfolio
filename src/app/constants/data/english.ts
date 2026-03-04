@@ -35,7 +35,7 @@ export const OPEN_TO_OPPORTUNITIES_ENG = "Open to Opportunities";
 
 export const PROJECTS_LIST_ENG: Project[] = [
   {
-    id: 7,
+    id: 1,
     name: "MerySu Sparkle Cleaning",
     description:
       "A professional cleaning service website showcasing services for homes, offices, and rentals, with a strong focus on eco-friendly products and seamless online booking.",
@@ -48,16 +48,84 @@ export const PROJECTS_LIST_ENG: Project[] = [
       "Next.js",
       "TypeScript",
       "Tailwind CSS",
-      "Framer Motion",
       "HTML",
       "CSS",
+      "Python",
+      "FastAPI",
+      "AWS",
+      "Resend",
+      "Cloudflare Turnstile",
     ],
     github: [],
     url: "https://merysu-cleaning.com/",
     image: "/merysu.png",
   },
   {
-    id: 8,
+    id: 2,
+    name: "Stiven Tatu Studio",
+    description:
+    "Frontend website for a creative tattoo studio with visually appealing design, showcasing tattoo styles and client contact options.",
+    problem:
+    "The project needed a professional website to clearly present tattoo services, visual styles, and make it easy for potential clients to get in touch.",
+    solution:
+    "I developed a responsive page with organized sections that highlight services, visual art, and contact forms aimed at driving conversions.",
+    technologies: [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "HTML",
+      "CSS",
+    ],
+    github: [],
+    url: "https://stiven-tatu-frontend.vercel.app/",
+    image: "/stiven_tatu.png",
+  },
+  {
+    id: 3,
+    name: "Semillas del Saber",
+    description:
+    "Frontend website for an educational project that presents learning offerings with organized content and a clear focus on subjects and resources.",
+    problem:
+    "They needed a web platform that communicates the educational offerings and allows visitors to quickly understand the benefits and available topics.",
+    solution:
+    "I built a clean and structured interface with sections that guide the user through the educational information and contact or enrollment options.",
+    technologies: [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "HTML",
+      "CSS",
+    ],
+    github: [],
+    url: "https://semillas-saber-frontend.vercel.app/",
+    image: "/semillas_del_saber.png",
+  },
+
+  {
+    id: 4,
+    name: "GlobalWay Forwarders",
+    description:
+    "Corporate presentation website for a company offering international logistics and transportation services, with clear navigation and sections.",
+    problem:
+    "The company required a professional digital presence to detail its transportation and logistics services in order to attract corporate clients.",
+    solution:
+    "I developed a structured website with dedicated sections for each service, testimonials, and contact information to build trust and capture leads.",
+    technologies: [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "HTML",
+      "CSS",
+    ],
+    github: [],
+    url: "https://forwarder-website-rm.vercel.app/",
+    image: "/forwarder.png",
+  },
+  {
+    id: 5,
     name: "Dulce Paladar",
     description:
       "A Next.js website for an artisanal bakery offering custom cakes, cupcakes, cookies, and dessert boxes, designed to reflect a warm and appetizing brand identity.",
@@ -70,21 +138,15 @@ export const PROJECTS_LIST_ENG: Project[] = [
       "Next.js",
       "TypeScript",
       "Tailwind CSS",
-      "Framer Motion",
       "HTML",
       "CSS",
-      "Python",
-      "FastAPI",
-      "AWS",
-      "Resend",
-      "Cloudflare Turnstile",
     ],
     github: [],
     url: "https://dulcepaladar.net/",
     image: "/dulce_paladar.png",
   },
   {
-    id: 9,
+    id: 6,
     name: "VA RO DESIGN – Interior Design Portfolio",
     description: "Online portfolio of VA RO DESIGN, an interior design studio that creates timeless and refined spaces by combining architectural vision with elegant contemporary style.",
     problem: "The designer needed a professional online presence to showcase her interior design services, decorative concepts, and 3D visualization capabilities to attract clients and communicate her aesthetic approach clearly.",
@@ -94,7 +156,6 @@ export const PROJECTS_LIST_ENG: Project[] = [
       "Next.js",
       "TypeScript",
       "Tailwind CSS",
-      "Framer Motion",
       "HTML",
       "CSS",
     ],
@@ -103,7 +164,7 @@ export const PROJECTS_LIST_ENG: Project[] = [
     image: "/valens_portfolio.png"
   },
   {
-    id: 6,
+    id: 7,
     name: "Virtual Marketing Assistant",
     description:
       "An AI-powered chatbot that automates social media content creation using contextual knowledge and document-based inputs.",
@@ -129,7 +190,7 @@ export const PROJECTS_LIST_ENG: Project[] = [
     image: "/images/projects/virtual-marketing-assistant.webp",
   },
   {
-    id: 1,
+    id: 8,
     name: "Portfolio",
     description:
       "My personal portfolio showcasing selected projects, skills, and professional experience. Continuously evolving with new improvements.",
@@ -147,7 +208,7 @@ export const PROJECTS_LIST_ENG: Project[] = [
     image: "/images/projects/portfolio.webp",
   },
   {
-    id: 2,
+    id: 9,
     name: "Dental Lab Web Site",
     description:
       "A full-stack web platform for a dental lab, including appointment scheduling, product management, and an admin panel.",
@@ -184,7 +245,7 @@ export const PROJECTS_LIST_ENG: Project[] = [
     image: "/images/projects/dental-lab.webp",
   },
   {
-    id: 3,
+    id: 10,
     name: "E-commerce",
     description:
       "An academic group project developed as part of a Full Stack Web Developer certification, featuring product browsing, cart functionality, and ratings.",
@@ -205,7 +266,7 @@ export const PROJECTS_LIST_ENG: Project[] = [
     image: "/images/projects/ecommerce.webp",
   },
   {
-    id: 4,
+    id: 11,
     name: "Web Pokémon App",
     description:
       "A web application that fetches Pokémon data from an external API and allows users to create new Pokémon entries (in-memory).",
@@ -226,7 +287,7 @@ export const PROJECTS_LIST_ENG: Project[] = [
     image: "/images/projects/pokemon-web.webp",
   },
   {
-    id: 5,
+    id: 12,
     name: "Flutter Pokémon App",
     description:
       "A simple mobile application built with Flutter that consumes a public API to display Pokémon data.",
